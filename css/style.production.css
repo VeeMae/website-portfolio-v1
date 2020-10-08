@@ -14,7 +14,7 @@ body {
   background-color: #fff;
   font-family: "Mukta", sans-serif;
   font-weight: 400;
-  font-size: 18px;
+  font-size: 20px;
   line-height: 25px;
   color: #1e1d27;
 }
@@ -44,7 +44,7 @@ span {
 a {
   color: #2e5152;
   text-decoration: none;
-  font-size: 20px;
+  font-size: 1.1em;
 }
 
 a:visited {
@@ -178,6 +178,7 @@ button:focus {
 .navigation-list li {
   display: inline-block;
   margin-left: 15px;
+  font-family: "Lobster Two", cursive;
 }
 
 /* Footer Styles */
@@ -220,6 +221,11 @@ footer p {
 }
 .profile h1 {
   padding-top: 20px;
+}
+
+.profile a {
+  font-size: 1.1em;
+  font-family: "Lobster Two", cursive;
 }
 /* About, Work, Contact Styles */
 .about-page-content,
@@ -693,7 +699,6 @@ footer p {
   .navigation-list a {
     font-size: 1.7em;
     text-decoration: none;
-    font-family: "Lobster Two", cursive;
   }
 
   .about-bio-container {
