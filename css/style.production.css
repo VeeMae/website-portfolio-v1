@@ -621,7 +621,8 @@ footer p {
   }
   .contact-grid,
   .about-page-grid {
-    width: 90%;
+    width: 95%;
+    margin-top: 40px;
   }
   .grid__item,
   .contact-grid-item,
