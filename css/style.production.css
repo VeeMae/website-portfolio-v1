@@ -690,7 +690,7 @@ footer p {
   svg {
     width: 100%;
     margin: 0 auto;
-    padding: none;
+    padding: 0;
     text-align: center;
   }
 
