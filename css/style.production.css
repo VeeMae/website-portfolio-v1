@@ -15,7 +15,7 @@ body {
   font-family: "Mukta", sans-serif;
   font-weight: 400;
   font-size: 18px;
-  line-height: 1.5em;
+  line-height: 25px;
   color: #1e1d27;
 }
 
@@ -632,7 +632,7 @@ footer p {
   }
 
   h1 {
-    font-size: 1.9em;
+    font-size: 1.8em;
   }
   h2 {
     font-size: 1.5em;
@@ -651,7 +651,12 @@ footer p {
     float: none;
     margin: 0 auto;
   }
-
+  .profile p {
+    font-size: 1.1em;
+  }
+  .profile a {
+    font-size: 1em;
+  }
   .page-header {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -682,19 +687,21 @@ footer p {
     display: block;
     text-align: center;
     margin: 0 auto;
-    padding-bottom: 15px;
+    padding-bottom: 20px;
   }
   .navigation-list a {
-    font-size: 1.8em;
+    font-size: 1.7em;
     text-decoration: none;
+    font-family: "Lobster Two", cursive;
   }
 
   .about-bio-container {
-    width: 90%;
+    width: 95%;
     margin: 0 auto;
   }
   .about-page-content p {
-    font-size: 1.5em;
+    font-size: 1.3em;
+    line-height: 1.3em;
   }
   svg {
     width: 100%;
@@ -707,9 +714,6 @@ footer p {
   .work-header-text::after,
   .about-header-text::after {
     width: 98%;
-  }
-  .contact-grid {
-    margin-bottom: 100px;
   }
   .page-footer {
     position: relative;
