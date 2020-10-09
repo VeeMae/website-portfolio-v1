@@ -240,7 +240,6 @@ footer p {
   margin: 0 auto;
   padding: 10px;
 }
-
 .about-button-container {
   margin: 0 auto;
   margin-top: 60px;
@@ -252,6 +251,11 @@ footer p {
   text-align: center;
 }
 
+.contact-grid-item h2,
+.grid__item h2,
+.about-page-content h1 {
+  line-height: 1.3em;
+}
 .work-header-text::after {
   content: "";
   display: block;
