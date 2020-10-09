@@ -140,9 +140,18 @@ button:focus {
   color: #eff4f4;
 }
 
-.button:hover,
+.button:hover {
+  text-decoration: none;
+  cursor: pointer;
+  opacity: 0.8;
+  color: #eff4f4;
+}
+
 .button:focus {
   text-decoration: none;
+  cursor: pointer;
+  opacity: 0.8;
+  color: #eff4f4;
 }
 
 /* Header Styles */
@@ -222,7 +231,6 @@ footer p {
 .profile h1 {
   padding-top: 20px;
 }
-
 .profile a {
   font-size: 1.1em;
   font-family: "Lobster Two", cursive;
@@ -240,6 +248,7 @@ footer p {
   margin: 0 auto;
   padding: 10px;
 }
+
 .about-button-container {
   margin: 0 auto;
   margin-top: 60px;
@@ -250,7 +259,6 @@ footer p {
 .contact-header-text {
   text-align: center;
 }
-
 .contact-grid-item h2,
 .grid__item h2,
 .about-page-content h1 {
@@ -327,6 +335,10 @@ footer p {
     margin-bottom: 60px;
   }
   .contact-grid-item {
+    background-color: #dee9e9;
+    width: auto;
+    height: auto;
+    margin: 0;
     padding-bottom: 25px;
     text-align: center;
   }
