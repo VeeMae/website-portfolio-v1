@@ -5,7 +5,7 @@
 :root {
   --primary-color: #fff;
   --font-color: #1e1d27;
-  --span-color: #222627;
+  --span-color: #31595e;
   --link-color: #2e5152;
   --link-visited-color: #294849;
   --link-hover-color: #254041;
@@ -23,36 +23,37 @@ body {
   background-color: var(--primary-color);
   font-family: "Mukta", sans-serif;
   font-weight: 400;
-  font-size: 18px;
-  line-height: 1.5em;
+  font-size: 20px;
+  line-height: 25px;
   color: var(--font-color);
 }
 
 h1 {
   font-size: 30px;
-  font-family: "Lobster", cursive;
+  font-family: "Lobster Two", cursive;
 }
 
 h2 {
   font-size: 24px;
-  font-family: "Lobster", cursive;
+  font-family: "Lobster Two", cursive;
 }
 
 h3 {
   font-size: 18px;
-  font-family: "Lobster", cursive;
+  font-family: "Lobster Two", cursive;
 }
 
 span {
   font-weight: var(--font-weight);
   color: var(--span-color);
+  font-family: "Lobster Two", cursive;
 }
 
 /* Links, Button, and svg Styles */
 a {
   color: var(--link-color);
   text-decoration: none;
-  font-size: 20px;
+  font-size: 1.1em;
 }
 
 a:visited {
@@ -114,6 +115,9 @@ button:focus,
 .button:hover,
 .button:focus {
   text-decoration: none;
+  cursor: pointer;
+  opacity: 0.8;
+  color: var(--button-text-color);
 }
 
 /* Header Styles */
@@ -143,6 +147,7 @@ button:focus,
 .navigation-list li {
   display: inline-block;
   margin-left: 15px;
+  font-family: "Lobster Two", cursive;
 }
 
 /* Footer Styles */
@@ -153,6 +158,11 @@ button:focus,
   position: absolute;
   bottom: 0;
   width: 100%;
+  padding: 200px 10px 0 20px;
+}
+.contact-footer {
+  position: relative;
+  padding: 300px 10px 0 20px;
 }
 img.footer-logo {
   width: 100px;
@@ -170,6 +180,7 @@ footer p {
   height: auto;
   margin-right: 40px;
   border-radius: 50%;
+  border: 5px solid #588289;
 }
 
 .profile {
@@ -177,7 +188,13 @@ footer p {
   margin: 0 auto;
   padding-top: 100px;
 }
-
+.profile h1 {
+  padding-top: 20px;
+}
+.profile a {
+  font-size: 1.1em;
+  font-family: "Lobster Two", cursive;
+}
 /* About, Work, Contact Styles */
 .about-page-content,
 .table-content {
@@ -202,7 +219,11 @@ footer p {
 .contact-header-text {
   text-align: center;
 }
-
+.contact-grid-item h2,
+.grid__item h2,
+.about-page-content h1 {
+  line-height: 1.3em;
+}
 .work-header-text::after {
   content: "";
   display: block;
@@ -262,6 +283,10 @@ footer p {
     margin-bottom: 60px;
   }
   .contact-grid-item {
+    background-color: var(--grid-item-background-color);
+    width: auto;
+    height: auto;
+    margin: 0;
     padding-bottom: 25px;
     text-align: center;
   }
@@ -445,7 +470,8 @@ footer p {
   }
   .contact-grid,
   .about-page-grid {
-    width: 90%;
+    width: 95%;
+    margin-top: 40px;
   }
   .grid__item,
   .contact-grid-item,
@@ -455,7 +481,7 @@ footer p {
   }
 
   h1 {
-    font-size: 1.9em;
+    font-size: 1.8em;
   }
   h2 {
     font-size: 1.5em;
@@ -474,7 +500,12 @@ footer p {
     float: none;
     margin: 0 auto;
   }
-
+  .profile p {
+    font-size: 1.1em;
+  }
+  .profile a {
+    font-size: 1em;
+  }
   .page-header {
     flex-direction: column;
     flex-wrap: wrap;
@@ -497,24 +528,25 @@ footer p {
     display: block;
     text-align: center;
     margin: 0 auto;
-    padding-bottom: 15px;
+    padding-bottom: 20px;
   }
   .navigation-list a {
-    font-size: 1.8em;
+    font-size: 1.7em;
     text-decoration: none;
   }
 
   .about-bio-container {
-    width: 90%;
+    width: 95%;
     margin: 0 auto;
   }
   .about-page-content p {
-    font-size: 1.5em;
+    font-size: 1.3em;
+    line-height: 1.3em;
   }
   svg {
     width: 100%;
     margin: 0 auto;
-    padding: none;
+    padding: 0;
     text-align: center;
   }
 
@@ -522,9 +554,6 @@ footer p {
   .work-header-text::after,
   .about-header-text::after {
     width: 98%;
-  }
-  .contact-grid {
-    margin-bottom: 100px;
   }
   .page-footer {
     position: relative;
