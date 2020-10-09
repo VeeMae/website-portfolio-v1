@@ -1,12 +1,4 @@
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v7.0.29,
-* Autoprefixer: v9.7.6
-* Browsers: last 4 version
-*/
-
 * {
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -54,13 +46,11 @@ a:visited {
 
 a:focus {
   color: #254041;
-  -webkit-text-decoration: underline #254041 double;
   text-decoration: underline #254041 double;
 }
 
 a:hover {
   color: #254041;
-  -webkit-text-decoration: underline #254041 double;
   text-decoration: underline #254041 double;
 }
 
@@ -70,7 +60,6 @@ a:active {
 }
 
 .navigation-list__item--active {
-  -webkit-text-decoration: underline #b0c9ca double;
   text-decoration: underline #b0c9ca double;
 }
 
@@ -93,8 +82,6 @@ svg {
   padding: 10px;
   border-radius: 3px;
   border-bottom: 2px solid rgba(224, 224, 235, 0.5);
-  -webkit-transition: opacity 0.3s;
-  -o-transition: opacity 0.3s;
   transition: opacity 0.3s;
 }
 
@@ -107,8 +94,6 @@ button {
   padding: 10px;
   border-radius: 3px;
   border-bottom: 2px solid rgba(224, 224, 235, 0.5);
-  -webkit-transition: opacity 0.3s;
-  -o-transition: opacity 0.3s;
   transition: opacity 0.3s;
 }
 
@@ -140,15 +125,22 @@ button:focus {
   color: #eff4f4;
 }
 
-.button:hover,
+.button:hover {
+  text-decoration: none;
+  cursor: pointer;
+  opacity: 0.8;
+  color: #eff4f4;
+}
+
 .button:focus {
   text-decoration: none;
+  cursor: pointer;
+  opacity: 0.8;
+  color: #eff4f4;
 }
 
 /* Header Styles */
 .page-header {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   width: 98%;
   padding-top: 20px;
@@ -157,14 +149,10 @@ button:focus {
 }
 
 .page-header__item {
-  -webkit-box-flex: 0;
-  -ms-flex: 0 1 250px;
   flex: 0 1 250px;
 }
 
 .page-header__item:last-child {
-  -webkit-box-flex: 1;
-  -ms-flex-positive: 1;
   flex-grow: 1;
   text-align: right;
 }
@@ -222,7 +210,6 @@ footer p {
 .profile h1 {
   padding-top: 20px;
 }
-
 .profile a {
   font-size: 1.1em;
   font-family: "Lobster Two", cursive;
@@ -240,6 +227,7 @@ footer p {
   margin: 0 auto;
   padding: 10px;
 }
+
 .about-button-container {
   margin: 0 auto;
   margin-top: 60px;
@@ -250,7 +238,6 @@ footer p {
 .contact-header-text {
   text-align: center;
 }
-
 .contact-grid-item h2,
 .grid__item h2,
 .about-page-content h1 {
@@ -297,9 +284,7 @@ footer p {
 
 @supports (display: grid) {
   .grid {
-    display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 1fr 20px 1fr 20px 1fr;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 20px;
     margin: 0 auto;
@@ -327,68 +312,44 @@ footer p {
     margin-bottom: 60px;
   }
   .contact-grid-item {
+    background-color: #dee9e9;
+    width: auto;
+    height: auto;
+    margin: 0;
     padding-bottom: 25px;
     text-align: center;
   }
   .about-page-grid {
-    display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
-    -ms-grid-rows: 1fr;
     grid-template-rows: 1fr;
     grid-gap: 40px;
     margin: 0 auto;
     margin-top: 60px;
     width: 50%;
   }
-  .about-page-grid > *:nth-child(1) {
-    -ms-grid-row: 1;
-    -ms-grid-column: 1;
-  }
   .contact-grid {
-    display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
-    -ms-grid-rows: 1fr;
     grid-template-rows: 1fr;
     grid-gap: 20px;
     margin: 0 auto;
     margin-top: 10px;
     width: 30%;
   }
-  .contact-grid > *:nth-child(1) {
-    -ms-grid-row: 1;
-    -ms-grid-column: 1;
-  }
 }
 
 /* CSS Animation Styles */
 .first-cloud,
 .third-cloud {
-  -webkit-animation: 5s cloud-move infinite alternate linear;
   animation: 5s cloud-move infinite alternate linear;
-}
-
-@-webkit-keyframes cloud-move {
-  from {
-    -webkit-transform: translate(0, 0);
-    transform: translate(0, 0);
-  }
-  to {
-    -webkit-transform: translate(400px, 0);
-    transform: translate(400px, 0);
-  }
 }
 
 @keyframes cloud-move {
   from {
-    -webkit-transform: translate(0, 0);
     transform: translate(0, 0);
   }
   to {
-    -webkit-transform: translate(400px, 0);
     transform: translate(400px, 0);
   }
 }
@@ -398,46 +359,17 @@ footer p {
   animation: 6s cloud-move-reverse infinite alternate-reverse linear;
 }
 
-@-webkit-keyframes cloud-move-reverse {
-  from {
-    -webkit-transform: translate(0, 0);
-    transform: translate(0, 0);
-  }
-  to {
-    -webkit-transform: translate(400px, 0);
-    transform: translate(400px, 0);
-  }
-}
-
 @keyframes cloud-move-reverse {
   from {
-    -webkit-transform: translate(0, 0);
     transform: translate(0, 0);
   }
   to {
-    -webkit-transform: translate(400px, 0);
     transform: translate(400px, 0);
   }
 }
 
 .building-1 {
-  -webkit-animation: 5s building-change-1 infinite linear;
   animation: 5s building-change-1 infinite linear;
-}
-
-@-webkit-keyframes building-change-1 {
-  0% {
-    fill: #60af94;
-  }
-  50% {
-    fill: #4d997e;
-  }
-  80% {
-    fill: #aad4c6;
-  }
-  100% {
-    fill: #60af94;
-  }
 }
 
 @keyframes building-change-1 {
@@ -456,23 +388,7 @@ footer p {
 }
 
 .building-2 {
-  -webkit-animation: 4s building-change-2 infinite linear;
   animation: 4s building-change-2 infinite linear;
-}
-
-@-webkit-keyframes building-change-2 {
-  0% {
-    fill: #e3643f;
-  }
-  50% {
-    fill: #c9451d;
-  }
-  90% {
-    fill: #ec9479;
-  }
-  100% {
-    fill: #e3643f;
-  }
 }
 
 @keyframes building-change-2 {
@@ -492,23 +408,7 @@ footer p {
 
 .first-tree,
 .second-tree {
-  -webkit-animation: 5s change-tree-color infinite alternate linear;
   animation: 5s change-tree-color infinite alternate linear;
-}
-
-@-webkit-keyframes change-tree-color {
-  0% {
-    fill: #598830;
-  }
-  50% {
-    fill: #bddea1;
-  }
-  90% {
-    fill: #6faa3c;
-  }
-  100% {
-    fill: #598830;
-  }
 }
 
 @keyframes change-tree-color {
@@ -527,23 +427,7 @@ footer p {
 }
 
 .road {
-  -webkit-animation: 5s change-path-color infinite alternate linear;
   animation: 5s change-path-color infinite alternate linear;
-}
-
-@-webkit-keyframes change-path-color {
-  0% {
-    fill: #293d56;
-  }
-  50% {
-    fill: #6488b4;
-  }
-  90% {
-    fill: #4b6f9b;
-  }
-  100% {
-    fill: #293d56;
-  }
 }
 
 @keyframes change-path-color {
@@ -562,23 +446,7 @@ footer p {
 }
 
 .window {
-  -webkit-animation: 5s change-window-color infinite linear;
   animation: 5s change-window-color infinite linear;
-}
-
-@-webkit-keyframes change-window-color {
-  0% {
-    fill: #fff;
-  }
-  50% {
-    fill: #e6e6e6;
-  }
-  90% {
-    fill: #999999;
-  }
-  100% {
-    fill: #fff;
-  }
 }
 
 @keyframes change-window-color {
@@ -612,7 +480,6 @@ footer p {
   .grid,
   .contact-grid,
   .about-page-grid {
-    -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
     margin-bottom: 50px;
   }
@@ -669,18 +536,10 @@ footer p {
     font-size: 1em;
   }
   .page-header {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
     flex-direction: column;
-    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     height: auto;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
     align-items: center;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
     justify-content: center;
     border-bottom: 1px #728182 solid;
   }
