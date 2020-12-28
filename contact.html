@@ -3,8 +3,12 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Contact Me</title>
-    <link rel="icon" type="image/jpg" href="img/logo_size_invert.jpg" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+      integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
+      crossorigin="anonymous"
+    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
@@ -16,182 +20,86 @@
       rel="stylesheet"
     />
     <link
-      href="https://fonts.googleapis.com/css2?family=Lobster+Two&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" type="text/css" href="css/style.production.css" />
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+    <title>Contact Me</title>
+    <link rel="icon" type="image/jpg" href="img/logo_size.jpg" />
   </head>
 
   <body>
-    <header class="page-header">
-      <a href="index.html"
-        ><img
-          src="img/logo-teal.png"
-          alt="Logo Photo spelling out the name Venus Mae"
-          class="page-header__item"
-      /></a>
-      <nav class="main-navigation page-header__item">
-        <ul role="menubar" class="navigation-list">
-          <li role="presentation">
-            <a href="index.html" role="menuitem" class="navigation-list__item"
-              >Home</a
-            >
-          </li>
-          <li role="presentation">
-            <a href="about.html" role="menuitem" class="navigation-list__item"
-              >About Me</a
-            >
-          </li>
-          <li role="presentation">
-            <a href="work.html" role="menuitem" class="navigation-list__item"
-              >Work</a
-            >
-          </li>
-          <li role="presentation">
-            <a
-              href="contact.html"
-              role="menuitem"
-              class="navigation-list__item navigation-list__item--active"
-              >Contact</a
-            >
-          </li>
-        </ul>
+    <header class="page-header container">
+      <nav class="navbar navbar-expand-md navbar-light">
+        <a class="navbar-brand" href="index.html"
+          ><img
+            src="img/dark_logo_transparent_background.png"
+            alt="Logo spelling out the name Venus Mae"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarContent"
+          aria-controls="navbarContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarContent">
+          <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About Me</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="work.html">Work</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
       </nav>
     </header>
 
-    <div>
-      <h1 class="contact-header-text">Contact Me</h1>
-    </div>
+    <section class="contact-container contact-grid">
+      <h1 class="contact-header">Contact Me</h1>
+      <p class="contact-p">Feel free to reach me by clicking the button below 👇🏼</p>
+    </section>
 
-    <!-- <div class="contact-information">
-            Corona<br>
-            CA, 92879<br>
-            United States<br>
-            <br>
-            <a href="tel:+14089217410">Primary Number: +1 408-921-7410</a><br>
-            Email: <a href="mailto:veemaee@gmail.com">veemaee@gmail.com</a><br>
-            <a href="mailto:veemaee@gmail.com">Contact Me</a>
-        </div> -->
-
-    <div class="contact-grid">
-      <div class="contact-grid-item">
-        <h2>Easiest Way to Send Me Messages:</h2>
-        <p class="change-me">
-          Click on the button to the right that says "Let's Chat!"
-        </p>
-      </div>
-      <div class="contact-grid-item">
-        <h2>Where to Find Me</h2>
-        Corona<br />
-        CA, 92879<br />
-        United States<br />
-      </div>
-      <div class="contact-grid-item">
-        <h2>How to Reach Me</h2>
-        Email: <a href="mailto:veemaee@gmail.com">veemaee@gmail.com</a><br />
-        <!-- <a href="mailto:veemaee@gmail.com">Contact Me</a> -->
-      </div>
-      <div class="contact-grid-item">
-        <h2>Blog</h2>
-      </div>
-    </div>
-
-    <!-- <div class="contact-form-div">
-            <form action="" method="post" id="contact-form">
-                <label class="standard-label" for="contact-email">E-mail: </label>
-                <input type="email" id="contact-email" required>
-                 <br>
-                <label class="standard-label" for="phone-number">Telephone: </label>
-                <input type="tel" pattern="\d{3}[\-]\d{3}[\-]\d{4}" id="phone-number">
-                <br>
-                <label class="standard-label" for="message-area">Message: </label>
-                <textarea maxlength="240" id="message-area" required></textarea>
-                <br>
-                <input type="submit" value="Send message">
-                <button type="submit">Send Message</button>
-            </form>
-        </div> -->
-
-    <div
+    <a
+      class="typeform-share button"
+      href="https://form.typeform.com/to/mcIQTNzd?typeform-medium=embed-snippet"
+      data-mode="popup"
       style="
-        position: fixed;
-        top: calc(50% - 250px);
-        right: 0;
-        transition: width 300ms ease-out;
-        width: 0;
+        display: block;
+        text-decoration: none;
+        background-color: #000000;
+        color: white;
+        cursor: pointer;
+        font-family: Mukta, sans-serif;
+        font-size: 18px;
+        line-height: 50px;
+        text-align: center;
+        margin: 0 auto;
+        height: 50px;
+        padding: 0px 0px;
+        border-radius: 6px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
       "
-    >
-      <a
-        class="typeform-share button"
-        href="https://form.typeform.com/to/mcIQTNzd"
-        data-mode="side_panel"
-        style="
-          box-sizing: border-box;
-          position: absolute;
-          top: 300px;
-          width: 200px;
-          height: 48px;
-          padding: 0 20px;
-          margin: 0;
-          cursor: pointer;
-          background: #6aa0ad;
-          border-radius: 4px 4px 0px 0px;
-          box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.06),
-            0px 2px 4px rgba(0, 0, 0, 0.08);
-          display: flex;
-          align-items: center;
-          justify-content: flex-start;
-          transform: rotate(-90deg);
-          transform-origin: bottom left;
-          color: white;
-          text-decoration: none;
-        "
-        data-width="320"
-        data-height="500"
-        target="_blank"
-      >
-        <span
-          class="icon"
-          style="
-            width: 32px;
-            position: relative;
-            text-align: center;
-            transform: rotate(90deg) scale(0.85);
-            left: -8px;
-          "
-        >
-          <svg
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-            style="margin-top: 10px"
-          >
-            <path
-              d="M21 0H0V9L10.5743 24V16.5H21C22.6567 16.5 24 15.1567 24 13.5V3C24 1.34325 22.6567 0 21 0ZM7.5 9.75C6.672 9.75 6 9.07875 6 8.25C6 7.42125 6.672 6.75 7.5 6.75C8.328 6.75 9 7.42125 9 8.25C9 9.07875 8.328 9.75 7.5 9.75ZM12.75 9.75C11.922 9.75 11.25 9.07875 11.25 8.25C11.25 7.42125 11.922 6.75 12.75 6.75C13.578 6.75 14.25 7.42125 14.25 8.25C14.25 9.07875 13.578 9.75 12.75 9.75ZM18 9.75C17.172 9.75 16.5 9.07875 16.5 8.25C16.5 7.42125 17.172 6.75 18 6.75C18.828 6.75 19.5 7.42125 19.5 8.25C19.5 9.07875 18.828 9.75 18 9.75Z"
-              fill="white"
-            />
-          </svg>
-        </span>
-        <span
-          style="
-            text-decoration: none;
-            font-size: 18px;
-            font-family: Helvetica, Arial, sans-serif;
-            white-space: nowrap;
-            overflow: hidden;
-            text-overflow: ellipsis;
-            width: 100%;
-            text-align: center;
-            -webkit-font-smoothing: antialiased;
-            -moz-osx-font-smoothing: grayscale;
-          "
-        >
-          Let's Chat!
-        </span>
-      </a>
-    </div>
+      data-size="100"
+      target="_blank"
+      >Click to contact me
+    </a>
     <script>
       (function () {
         var qs,
@@ -214,27 +122,48 @@
       })();
     </script>
 
-    <footer class="page-footer contact-footer">
-      <div class="social-media">
-        <a href="https://github.com/VeeMae"
-          ><img src="img/github_icon.svg" alt="Github"
+    <footer class="container">
+      <div class="footer-content container">
+        <a class="social-media-icon" href="https://github.com/VeeMae" target="_blank"
+          ><img src="img/github-icon.svg" alt="Github"
         /></a>
-        <a href="https://stackoverflow.com/"
-          ><img src="img/stack-overflow_icon.svg" alt="Stack Overflow"
+        <a class="social-media-icon" href="https://stackoverflow.com/" target="_blank"
+          ><img src="img/stackoverflow-icon.svg" alt="Stack Overflow"
         /></a>
-        <a href="https://www.linkedin.com/"
-          ><img src="img/linkedin_icon.svg" alt="LinkedIn"
+        <a class="social-media-icon" href="https://www.linkedin.com/in/venusmaemg/" target="_blank"
+          ><img src="img/linkedin-icon.svg" alt="LinkedIn"
         /></a>
-      </div>
-      <p>
-        Created By<br /><a href="index.html"
-          ><img
-            src="img/footer-logo.png"
+        <br />
+        <a class="footer-credit" href="index.html">
+          <img
+            class="heart-icon"
+            src="img/heart-icon.svg"
+            alt="Icon of a computer screen with code"
+          />
+          <img
+            src="img/dark_logo_transparent_background.png"
             alt="Logo Photo spelling out the name Venus Mae"
             class="footer-logo"
-        /></a>
-      </p>
+          />
+        </a>
+      </div>
     </footer>
-    <script src="js/tota11y.min.js"></script>
+
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
+      integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
+      crossorigin="anonymous"
+    ></script>
+    <!-- <script src="js/tota11y.min.js"></script> -->
   </body>
 </html>
