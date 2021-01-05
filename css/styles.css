@@ -25,6 +25,9 @@ body {
   font-size: 18px;
   line-height: 20px;
   color: var(--font-color);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 h1 {
@@ -80,6 +83,9 @@ header {
   position: relative;
 }
 
+div#navbarContent.navbar-collapse.collapse.show {
+  background-color: lavender;
+}
 .navbar-nav {
   position: absolute;
   right: 0px;
@@ -90,17 +96,19 @@ ul.navbar-nav {
   font-weight: 700;
 }
 
+a.nav-link {
+  font-size: 1.3rem;
+}
+
 /* Footer Styles */
 footer {
   text-align: center;
   clear: both;
   margin: 0 auto;
+  margin-top: 50px;
 }
 
 .footer-content {
-  display: block;
-  position: absolute;
-  bottom: 0;
   text-align: center;
   width: 100%;
   margin: 0 auto;
@@ -120,18 +128,18 @@ footer {
 /* Homepage Styles */
 .profile-portrait {
   float: left;
-  width: 230px;
+  width: 210px;
   margin-right: 40px;
   border-radius: 50%;
   border: 5px solid #000;
-  /* animation: 4s fadeInLeft ease-in; */
+  animation: 4s fadeInLeft ease-in;
 }
 
 .profile {
-  width: 50%;
+  max-width: 700px;
   margin: 0 auto;
   margin-top: 200px;
-  /* animation: 3s fadeInBottom ease-in; */
+  animation: 3s fadeInBottom ease-in;
 }
 .profile h1,
 .profile p {
@@ -197,22 +205,17 @@ h2.mb-0 .btn:hover {
     display: grid;
     grid-template-columns: 1fr;
     margin: 0 auto;
-    width: 15%;
+    width: 50%;
     text-align: center;
   }
 
   .contact-p {
-    margin: 50px 0 60px 0;
-  }
-  .typeform-share {
-    width: 15%;
+    margin: 50px 0 10px 0;
   }
 
   .work-grid__item {
     padding: 20px;
     line-height: 1.7rem;
-  }
-  .work-grid__item {
     background-color: var(--grid-item-background-color);
     width: auto;
     margin: 0;
@@ -249,6 +252,14 @@ h2.mb-0 .btn:hover {
 }
 
 /* Media Queries */
+
+/* Allows the collapsed menu to push the content down, and allows for background color when collapsed only*/
+@media screen and (max-width: 770px) {
+  .navbar-nav {
+    position: relative;
+  }
+}
+
 @media all and (max-width: 760px) {
   header {
     margin: 0 auto;
@@ -307,10 +318,6 @@ h2.mb-0 .btn:hover {
   .contact-p {
     margin: 30px auto;
     margin-bottom: 50px;
-  }
-
-  .typeform-share {
-    width: 50%;
   }
 }
 
@@ -373,9 +380,5 @@ h2.mb-0 .btn:hover {
   .contact-p {
     margin: 30px auto;
     margin-bottom: 40px;
-  }
-
-  .typeform-share {
-    width: 20%;
   }
 }
