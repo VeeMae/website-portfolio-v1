@@ -11,30 +11,14 @@
       integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
       crossorigin="anonymous"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
-      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
-      crossorigin="anonymous"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Mukta:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap"
-      rel="stylesheet"
-    />
     <link rel="stylesheet" type="text/css" href="css/styles.css" />
   </head>
 
   <body>
     <header class="page-header container">
-      <nav class="navbar navbar-expand-md navbar-light">
+      <nav class="navbar navbar-expand-lg navbar-light">
         <a class="navbar-brand" href="index.html"
-          ><img
-            src="img/dark_logo_transparent_background.png"
-            alt="Logo spelling out the name Venus Mae"
+          ><img src="img/dark_logo_transparent_background.png" alt="Logo of the name Venus Mae"
         /></a>
         <button
           class="navbar-toggler"
@@ -50,13 +34,13 @@
 
         <div class="collapse navbar-collapse" id="navbarContent">
           <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-            <li class="nav-item active">
+            <li class="nav-item">
               <a class="nav-link" href="index.html">Home</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="about.html">About Me</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item active">
               <a class="nav-link" href="work.html">Work</a>
             </li>
             <li class="nav-item">
@@ -70,35 +54,100 @@
     <div style="flex-grow: 1">
       <section class="work-container">
         <h1 class="work-header">Projects</h1>
-        <div class="work-grid">
+
+        <div class="caseStudyWrapper container">
+          <div class="card text-center container caseStudyContainer">
+            <div class="card-header featuredHeader">Featured Application</div>
+            <div class="card-body caseStudy">
+              <h2 class="card-title featuredTitle">The Meet App</h2>
+              <p class="card-text">
+                <img
+                  class="responsive"
+                  src="./img/MeetApp.png"
+                  alt="Photo of the Meet Application homepage."
+                />
+                <img
+                  class="responsive"
+                  src="./img/MeetApp2.png"
+                  alt="Photo of the Meet Application events."
+                />
+              </p>
+              <p class="card-text featuredText">
+                The Meet App is a serverless, progressive web application. It was built using React,
+                a Google Calendar API to fetch upcoming events, serverless functions through AWS
+                lambda, OAuth2 authentication flow, and a test-driven development technique. Through
+                the app, users are able to filter events by city, show/hide event details, specify a
+                number of events to be displayed, view cached events when offline, add a shortcut to
+                their device homescreen, and view a chart showing the number of events by city and
+                popularity. In addition, the process included creating user stories to define the
+                application logic and using Atatus as an application performance monitoring tool
+                post-production.
+              </p>
+            </div>
+            <div class="card-footer btn">
+              <a href="https://veemae.github.io/meet-app/" target="_blank">See The Project</a><br />
+              <a href="https://github.com/VeeMae/meet-app" target="_blank"
+                >See The GitHub Repository</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="work-grid container">
           <div class="work-grid__item">
-            <h2>Rogue Pickings Website - Static Version</h2>
+            <h2>Rogue Pickings Website (Static Version)</h2>
             <p>
               This is the first project I made during my time with Skillcrush. I was tasked with
-              creating a website from scratch, using a PSD file.
+              creating a website from the ground up, using a PSD file. The app was done in HTML and
+              CSS.
             </p>
-            <a href="https://github.com/VeeMae/Rogue-Pickings" target="_blank">See The Project</a>
+            <a href="https://veemae.github.io/Rogue-Pickings/" target="_blank">See The Project</a
+            ><br />
+            <a href="https://github.com/VeeMae/Rogue-Pickings" target="_blank"
+              >See The GitHub Repository</a
+            >
           </div>
           <div class="work-grid__item">
-            <h2>Rogue Pickings Website - Responsive Version</h2>
+            <h2>Rogue Pickings Website (Responsive Version)</h2>
             <p>
               Using the static version from my first project, I added media queries to make the site
               responsive for both mobile and desktop versions.
             </p>
-            <a href="https://github.com/VeeMae/rogue-pickings-responsive" target="_blank"
+            <a href="https://veemae.github.io/rogue-pickings-responsive/" target="_blank"
               >See The Project</a
+            ><br />
+            <a href="https://github.com/VeeMae/rogue-pickings-responsive" target="_blank"
+              >See The GitHub Repository</a
             >
           </div>
           <div class="work-grid__item">
             <h2>Harry Potter Application</h2>
             <p>
-              This is a web application I created to let users look at all the characters from the
-              Harry Potter movies in list form. When a user clicks on a button, a modal will appear
-              with more description of the character.
+              This is a web application that allows users to read about the Harry Potter characters.
+              When a user clicks on a button, a modal will appear with more description of each
+              character. The app was created using HTML, CSS, and JavaScript.
             </p>
-            <a href="https://veemae.github.io/harry-potter-js-app/" target="_blank"
+            <a href="https://github.com/VeeMae/harry-potter-js-app" target="_blank"
               >See The Project</a
+            ><br />
+            <a href="https://veemae.github.io/harry-potter-js-app/" target="_blank"
+              >See The GitHub Repository</a
             >
+          </div>
+          <div class="work-grid__item">
+            <h2>MyFlix App</h2>
+            <p>
+              This is an application I created using the MERN Stack. It was built in 2 phases - the
+              first part was the back-end, while the second was the client-side.
+            </p>
+            <a href="https://myflix-movies.netlify.app/" target="_blank">See The Project</a><br />
+            <a href="https://github.com/VeeMae/myFlix-client" target="_blank"
+              >See The GitHub Repository</a
+            >
+          </div>
+          <div class="work-grid__item">
+            <h2>More Projects Coming Soon!</h2>
+            <p>I'm currently working on some cool stuff. Stay tuned!</p>
           </div>
           <div class="work-grid__item">
             <h2>More Projects Coming Soon!</h2>
@@ -121,17 +170,14 @@
         /></a>
         <br />
         <a class="footer-credit" href="index.html">
-          <img
-            class="heart-icon"
-            src="img/heart-icon.svg"
-            alt="Icon of a computer screen with code"
-          />
+          <img class="heart-icon" src="img/heart-icon.svg" alt="Icon of a heart" />
           <img
             src="img/dark_logo_transparent_background.png"
             alt="Logo Photo spelling out the name Venus Mae"
             class="footer-logo"
           />
         </a>
+        <p class="footer-year">&copy;2019</p>
       </div>
     </footer>
 
@@ -150,6 +196,6 @@
       integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
       crossorigin="anonymous"
     ></script>
-    <!-- <script src="js/tota11y.min.js"></script> -->
+    <script src="js/tota11y.min.js"></script>
   </body>
 </html>
