@@ -158,10 +158,10 @@ footer {
 /* Homepage Styles */
 .profile-portrait {
   float: left;
-  width: 250px;
+  width: 290px;
   margin-right: 30px;
-  border-radius: 50%;
-  /* border: 1px solid var(--span-color); */
+  border-radius: 85px 15px;
+  border: 1px dotted var(--span-color);
   animation: 2s fadeInOpacity linear;
   box-shadow: 1px 1px 50px var(--box-shadow);
 }
