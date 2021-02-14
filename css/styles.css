@@ -158,9 +158,9 @@ footer {
 /* Homepage Styles */
 .profile-portrait {
   float: left;
-  width: 290px;
+  width: 280px;
   margin-right: 30px;
-  border-radius: 85px 15px;
+  border-radius: 40px 0;
   border: 1px dotted var(--span-color);
   animation: 2s fadeInOpacity linear;
   box-shadow: 1px 1px 50px var(--box-shadow);
