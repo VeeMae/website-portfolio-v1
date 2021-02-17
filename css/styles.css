@@ -468,8 +468,8 @@ h2.mb-0 .btn:hover {
   .profile {
     text-align: center;
     width: 90%;
-    /* margin-top: 90px; */
-    height: 100vh;
+    margin-top: 120px;
+    height: 70vh;
   }
 
   .profile h1,
