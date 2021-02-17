@@ -29,7 +29,7 @@
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <span class="navbar-toggler-icon"></span>
+          <span><img src="img/menu_icon.svg" alt="Menu Icon" /></span>
         </button>
 
         <div class="collapse navbar-collapse" id="navbarContent">
@@ -95,23 +95,25 @@
 
         <div class="work-grid container">
           <div class="work-grid__item">
-            <h2>Rogue Pickings Website (Static Version)</h2>
+            <h2>Rogue Pickings Website</h2>
             <p>
-              This is the first project I made during my time with Skillcrush. I was tasked with
-              creating a website from the ground up, using a PSD file. The app was done in HTML and
-              CSS.
-            </p>
-            <a href="https://veemae.github.io/Rogue-Pickings/" target="_blank">👉🏼 &nbsp;Demo</a
-            ><br />
-            <a href="https://github.com/VeeMae/Rogue-Pickings" target="_blank"
-              >👉🏼 &nbsp;GitHub Repository</a
-            >
-          </div>
-          <div class="work-grid__item">
-            <h2>Rogue Pickings Website (Responsive Version)</h2>
-            <p>
-              Using the static version from my first project, I added media queries to make the site
-              responsive for both mobile and desktop versions.
+              This is a project where I built the website from scratch, using a PSD file. I
+              originally started with a static version, but I added responsiveness for better user
+              experience.
+              <img
+                  class="responsive"
+                  src="./img/Rogue Pickings Site.png"
+                  alt="Photo of the Rogue Pickings Website"
+                />
+            <br/>
+            <h2 id="work-list-header">Technical Specs:</h2>
+            <ul class="work-list">
+              <li>⚙️ Uses HTML</li>
+              <li>⚙️ Uses CSS styling</li>
+              <li>⚙️ Uses a PSD file</li>
+              <li>⚙️ Deployed to GitHub Pages</li>
+              <li>⚙️ Programmed in Visual Studio Code</li>
+            </ul>
             </p>
             <a href="https://veemae.github.io/rogue-pickings-responsive/" target="_blank"
               >👉🏼 &nbsp;Demo</a
@@ -121,36 +123,126 @@
             >
           </div>
           <div class="work-grid__item">
-            <h2>Harry Potter Application</h2>
+            <h2>Harry Potter JavaScript Application</h2>
             <p>
-              This is a web application that allows users to read about the Harry Potter characters.
+              This application allows users to read about Harry Potter characters by fetching data from an external API.
               When a user clicks on a button, a modal will appear with more description of each
-              character. The app was created using HTML, CSS, and JavaScript.
+              character.
+              <img
+                  class="responsive"
+                  src="./img/Harry Potter App.png"
+                  alt="Photo of the Harry Potter Application"
+                />
+              <br/>
+            <h2 id="work-list-header">Technical Specs:</h2>
+            <ul class="work-list">
+              <li>⚙️ Uses HTML</li>
+              <li>⚙️ Uses CSS styling</li>
+              <li>⚙️ Loads data from an external API</li>
+              <li>⚙️ Enables the viewing of more details upon clicking an item</li>
+              <li>⚙️ JavaScript code is formatted using ESLint and Prettier</li>
+              <li>⚙️ Uses a complex UI pattern - modals</li>
+              <li>⚙️ Deployed to GitHub Pages</li>
+              <li>⚙️ Programmed in Visual Studio Code</li>
+            </ul>
             </p>
-            <a href="https://github.com/VeeMae/harry-potter-js-app" target="_blank">👉🏼 &nbsp;Demo</a
+            <a href="https://github.com/VeeMae/harry-potter-js-app" target="_blank">👉🏼 &nbsp;Demo (Please see instructions in GitHub to view a demo)</a
             ><br />
-            <a href="https://veemae.github.io/harry-potter-js-app/" target="_blank"
+            <a href="https://github.com/VeeMae/harry-potter-js-app" target="_blank"
               >👉🏼 &nbsp;GitHub Repository</a
             >
           </div>
           <div class="work-grid__item">
-            <h2>MyFlix App</h2>
+            <h2>MyFlix Application</h2>
             <p>
               This is an application I created using the MERN Stack. It was built in 2 phases - the
-              first part was the back-end, while the second was the client-side.
+              first part was the server-side, and the second was the client-side using React.
+              <img
+                  class="responsive"
+                  src="./img/myFlix-React.png"
+                  alt="Photo of the myFlix Application (React Version) "
+                />
+               <br/>
+            <h2 id="work-list-header">Technical Specs:</h2>
+            <ul class="work-list">
+              <li>⚙️ API is a Node.js and Express application</li>
+              <li>⚙️ API uses REST architecture</li>
+              <li>⚙️ API uses middleware modules</li>
+              <li>⚙️ Database is built using MongoDB</li>
+              <li>⚙️ Business logic is modeled with Mongoose</li>
+              <li>⚙️ Coded in JavaScript</li>
+              <li>⚙️ API is tested using <a href="https://www.postman.com/" target="_blank">Postman</a></li>
+              <li>⚙️ API includes user authentication and authorization</li>
+              <li>⚙️ API includes data validation logic</li>
+              <li>⚙️ API is deployed to Heroku</li>
+              <li>⚙️ Programmed in Visual Studio Code</li>
+            </ul>
             </p>
-            <a href="#" target="_blank">👉🏼 &nbsp;Demo</a><br />
+            <a href="https://myflix-movie-application.herokuapp.com/" target="_blank">👉🏼 &nbsp;Demo</a><br />
+            <a href="https://github.com/VeeMae/myFlix" target="_blank"
+              >👉🏼 &nbsp;GitHub Repository to the full stack codebase</a
+            >
+            <br/>
             <a href="https://github.com/VeeMae/myFlix-client" target="_blank"
+              >👉🏼 &nbsp;GitHub Repository to the client-side codebase</a
+            >
+          </div>
+          <div class="work-grid__item">
+            <h2>React Native Chat Application</h2>
+            <p>This project is a mobile application that provides users with a chat interface and options to share images or send locations.
+                <img
+                  class="responsive"
+                  id="chat-app-img"
+                  src="./img/Chat App.png"
+                  alt="Photo of the Chat Application"
+                />
+                <br/>
+            <h2 id="work-list-header">Technical Specs:</h2>
+            <ul class="work-list">
+              <li>⚙️ Uses React Native</li>
+              <li>⚙️ Uses Expo CLI</li>
+              <li>⚙️ Uses Google Firestore Database</li>
+              <li>⚙️ Uses GiftedChat UI</li>
+              <li>⚙️ Uses JavaScript</li>
+              <li>⚙️ Uses Expo Go for mobile testing</li>
+              <li>⚙️ Uses Android Studio for rendering</li>
+              <li>⚙️ Programmed in Visual Studio Code</li>
+            </ul>
+            </p>
+            <a href="https://coach-courses-us.s3.amazonaws.com/exercises/1126/37624/e54b3ef9591f86c2c70ddd6d356522cc/Chat-App.gif" target="_blank">👉🏼 &nbsp;Demo (The app is not deployed live, so this is a gif demo)</a><br />
+            <a href="https://github.com/VeeMae/chat-application" target="_blank"
               >👉🏼 &nbsp;GitHub Repository</a
             >
           </div>
           <div class="work-grid__item">
-            <h2>More Projects Coming Soon!</h2>
-            <p>I'm currently working on some cool stuff. Stay tuned!</p>
+            <h2>myFlix Application (Angular Version)</h2>
+            <p>This project uses the server-side of the original myFlix app described above, but is built with Angular on the client-side.
+                 <img
+                  class="responsive"
+                  id="chat-app-img"
+                  src="./img/myFlix-Angular.png"
+                  alt="Photo of the myFlix Application (Angular Version)"
+                />
+                 <br/>
+            <h2 id="work-list-header">Technical Specs:</h2>
+            <ul class="work-list">
+              <li>⚙️ Uses the Angular framework</li>
+              <li>⚙️ Designed with Angular Material</li>
+              <li>⚙️ Uses TypeDocs for documentation</li>
+              <li>⚙️ Coded with TypeScript</li>
+              <li>⚙️ Deployed to GitHub Pages</li>
+              <li>⚙️ Programmed in Visual Studio Code</li>
+            </ul>
+            </p>
+            <a href="https://veemae.github.io/myFlix-angular-client/welcome" target="_blank">👉🏼 &nbsp;Demo</a><br />
+            <a href="https://github.com/VeeMae/myFlix-angular-client" target="_blank"
+              >👉🏼 &nbsp;GitHub Repository</a
+            >
           </div>
           <div class="work-grid__item">
-            <h2>More Projects Coming Soon!</h2>
-            <p>I'm currently working on some cool stuff. Stay tuned!</p>
+            <h2>More Projects Coming Soon</h2>
+            <p>Currently working on some cool stuff, check back later! ✌🏼</p>
+            <div style="width:100%;height:0;padding-bottom:100%;position:relative;"><iframe src="https://giphy.com/embed/STroE7bTBLTzxQUrZc" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div><p><a href="https://giphy.com/gifs/BareTreeMedia-work-from-home-btm-bare-tree-media-STroE7bTBLTzxQUrZc">via GIPHY</a></p>
           </div>
         </div>
       </section>
@@ -200,6 +292,6 @@
       integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
       crossorigin="anonymous"
     ></script>
-    <script src="js/tota11y.min.js"></script>
+    <!-- <script src="js/tota11y.min.js"></script> -->
   </body>
 </html>
