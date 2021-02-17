@@ -231,7 +231,7 @@ h2.card-title.featuredTitle {
 }
 
 p.card-text.featuredText {
-  width: 100%;
+  width: 95%;
   margin: 30px auto;
   font-weight: 400;
   font-size: 0.95rem;
@@ -277,7 +277,7 @@ ul.work-list {
 }
 
 .work-grid__item a {
-  font-size: 0.8rem;
+  font-size: 1rem;
   color: var(--projectLink-span-color);
   font-weight: 700;
 }
@@ -468,7 +468,8 @@ h2.mb-0 .btn:hover {
   .profile {
     text-align: center;
     width: 90%;
-    margin-top: 90px;
+    /* margin-top: 90px; */
+    height: 100vh;
   }
 
   .profile h1,
@@ -532,11 +533,12 @@ h2.mb-0 .btn:hover {
     font-size: 0.95rem;
   }
 
-  .card-footer a {
+  .card-footer a,
+  .work-grid__item a {
     font-size: 0.8rem;
   }
 
-  div.card-footer.btn {
+  /* div.card-footer.btn {
     text-align: left;
     padding: 15px;
   }
@@ -547,7 +549,7 @@ h2.mb-0 .btn:hover {
 
   p.card-text.featuredText {
     text-align: left;
-  }
+  } */
 
   /* contact page styles */
   .typeform-widget {
