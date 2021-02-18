@@ -456,6 +456,10 @@ ul.work-list {
     text-align: center;
   }
 
+  .social-media-icon:hover #hover-words {
+    display: none;
+  }
+
   .about-header,
   .work-header {
     margin-top: 20px;
@@ -577,6 +581,11 @@ ul.work-list {
   a.navbar-brand img {
     width: 165px;
   }
+
+  .social-media-icon:hover #hover-words {
+    display: none;
+  }
+
   /* homepage styles */
   .profile {
     margin: 0 auto;
