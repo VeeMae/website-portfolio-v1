@@ -18,7 +18,7 @@
   --box-shadow: #85625fc0;
   --resume-link-color: #a9899c;
   --about-button: #ccb8c4;
-  --nav-link-color: #a17d94;
+  --footer-color: #a17d94;
 }
 
 * {
@@ -105,7 +105,7 @@ div#navbarContent.navbar-collapse.collapse {
 }
 
 .navbar-light .navbar-nav .nav-link {
-  color: var(--nav-link-color);
+  color: var(--span-color);
   font-size: 1.2rem;
   letter-spacing: 2px;
 }
@@ -134,7 +134,7 @@ footer {
 }
 
 .footer-year {
-  color: var(--nav-link-color);
+  color: var(--footer-color);
   font-family: var(--secondary-font);
   font-size: 0.8rem;
   display: inline-block;
