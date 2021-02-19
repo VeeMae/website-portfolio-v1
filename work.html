@@ -99,7 +99,7 @@
             <p>
               This is a project I built from scratch using a PSD file (during my time at Skillcrush). I
               originally started with a static version, but with this iteration, I added responsiveness for better user
-              experience. This website is meant to emulate a local food truck that provides customers with fresh vegetables.
+              experience. This website is meant to represent a local food truck that provides customers with fresh vegetables.
               <img
                   class="responsive"
                   src="./img/Rogue Pickings Site.png"
@@ -153,7 +153,7 @@
           <div class="work-grid__item">
             <h2>MyFlix Application (React Version)</h2>
             <p>
-              I built this application using the MERN Stack. It was coded in 2 phases - 1) server-side 2) client-side using React and Redux. The app allows users to register and log in, view movies from a database, update/delete their profile, and add/remove movies to their list of favorites.
+              I built this application using the MERN Stack. It was created in 2 phases - 1) server-side using REST API and MongoDB 2) client-side using React and Redux. The app allows users to register and log in, view movies from a database, update/delete their profile, and add/remove movies to/from their list of favorites.
               <img
                   class="responsive"
                   src="./img/myFlix-React.png"
@@ -162,7 +162,7 @@
                <br/>
             <h2 id="work-list-header">Technical Specs:</h2>
             <ul class="work-list">
-              <li>⚙️ API uses Node.js and Express</li>
+              <li>⚙️ API uses Node and Express</li>
               <li>⚙️ API uses REST architecture</li>
               <li>⚙️ API uses middleware modules</li>
               <li>⚙️ Database is built using MongoDB</li>
@@ -216,7 +216,6 @@
             <p>This project uses the server-side of the original myFlix app described above, but is built with Angular on the client-side.
                  <img
                   class="responsive"
-                  id="chat-app-img"
                   src="./img/myFlix-Angular.png"
                   alt="Photo of the myFlix Application (Angular Version)"
                 />
@@ -234,6 +233,9 @@
             <a href="https://veemae.github.io/myFlix-angular-client/welcome" target="_blank">👉🏼 &nbsp;Demo</a><br />
             <a href="https://github.com/VeeMae/myFlix-angular-client" target="_blank"
               >👉🏼 &nbsp;GitHub Repository</a
+            ><br/>
+            <a href="case.html" target="_blank"
+              >👉🏼 &nbsp;Case Study</a
             >
           </div>
           <div class="work-grid__item">
@@ -247,19 +249,27 @@
 
     <footer class="container">
       <div class="footer-content container">
-        <a class="social-media-icon" href="https://github.com/VeeMae" target="_blank"
-          ><span id="hover-words">Check out my codebase!</span
+        <a class="social-media-icon" id="tooltip" href="https://github.com/VeeMae" target="_blank"
+          ><span class="tooltiptext">Check out my codebase!</span
           ><img src="img/github_icon.svg" alt="Github"
         /></a>
-        <a class="social-media-icon" href="mailto:hello@venusmae.dev"
-          ><span id="hover-words">Let's chat!</span><img src="img/mail_icon.svg" alt="Mail icon"
+        <a class="social-media-icon" id="tooltip" href="mailto:hello@venusmae.dev"
+          ><span class="tooltiptext">Let's chat!</span><img src="img/mail_icon.svg" alt="Mail icon"
         /></a>
-        <a class="social-media-icon" href="https://www.linkedin.com/in/venusmaemg/" target="_blank"
-          ><span id="hover-words">Let's connect!</span
+        <a
+          class="social-media-icon"
+          id="tooltip"
+          href="https://www.linkedin.com/in/venusmaemg/"
+          target="_blank"
+          ><span class="tooltiptext">Let's connect!</span
           ><img src="img/linkedin_icon.svg" alt="LinkedIn"
         /></a>
-        <a class="social-media-icon" href="https://www.worldwildlife.org/" target="_blank"
-          ><span id="hover-words">Donate to a good cause!</span
+        <a
+          class="social-media-icon"
+          id="tooltip"
+          href="https://www.worldwildlife.org/"
+          target="_blank"
+          ><span class="tooltiptext">Donate to a good cause!</span
           ><img src="img/donate_icon.svg" alt="World Wildlife Fund"
         /></a>
         <br />

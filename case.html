@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Case Study</title>
+    <link rel="icon" type="image/jpg" href="img/logo_size.jpg" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+      integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" type="text/css" href="css/style.production.css" />
+  </head>
+
+  <body>
+    <header class="page-header container">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="index.html"
+          ><img src="img/white_logo_transparent_background.png" alt="Logo of the name Venus Mae"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarContent"
+          aria-controls="navbarContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span><img src="img/menu_icon.svg" alt="Menu Icon" /></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarContent">
+          <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="work.html">Work</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <div style="flex-grow: 1">
+      <div class="headerText-container">
+        <h1 class="about-header">Case Study</h1>
+      </div>
+
+      <div class="container" id="case-study">
+        <p class="read-time">~10 minute read</p>
+        <h1 id="case-header">Overview</h1>
+        <p>
+          Project: myFlix Application (Angular Version)
+          <br />
+          <br />
+          The myFlix app allows users to register an account in order to view a list of movies,
+          details about a selected movie, add or delete movies to/from user's list of favorites, and
+          update or delete user's profile account.
+        </p>
+        <img
+          class="responsive"
+          src="./img/myFlix-angular-welcome.png"
+          alt="Image of the myFlix app's welcome page"
+        />
+
+        <div class="case-break"></div>
+        <h1 id="case-header">Purpose and Context</h1>
+        <p>
+          This project was one of six applications that I built as part of CareerFoundry's Web
+          Development program. In an earlier project, I had already created the myFlix appliction
+          using the MERN stack. In this particular project however, I'll be showcasing the myFlix
+          application using the MEAN stack. Instead of using React for the client-side, this version
+          uses Angular. Apart from the change in client-side development, the rest of the
+          application uses the same server-side (REST API and database) development that the React
+          version uses.
+        </p>
+
+        <h1 id="case-header">Objective</h1>
+        <p>
+          The goal in creating this application is to add another well-known framework to my full
+          stack web development skills.
+          <br />
+          <br />
+          The problem I was trying to solve is how to expand my limited client-side development
+          knowledge in order to be more marketable as a web developer.
+        </p>
+        <img
+          class="responsive"
+          src="./img/Angular.png"
+          alt="Image of the official Angular homepage"
+        />
+
+        <div class="case-break"></div>
+        <h1 id="case-header">Duration</h1>
+        <p>
+          Overall, the project took one week to complete (mostly because I only needed to change the
+          client-side build, while keeping the server-side API and database the same). Majority of
+          the time was spent learning a new language that was commonly used with Angular -
+          TypeScript. But once I got my footing, I actually enjoyed the process and was able to
+          finish in a short amount of time.
+        </p>
+
+        <h1 id="case-header">Credits</h1>
+        <ul id="case-study-list">
+          <li>Role: Sole Developer</li>
+          <li>Tutor: Gurpreet Kooner</li>
+          <li>Mentor: Tony Dominguez</li>
+        </ul>
+
+        <h1 id="case-header">Tools and Technology Specs</h1>
+        <ul id="case-study-list">
+          <li>Uses Angular Framework</li>
+          <li>Designed with Angular Material</li>
+          <li>Coded in TypeScript</li>
+          <li>Programmed in Visual Studio Code</li>
+          <li>Uses the script 'ng serve' for live rendering</li>
+          <li>Deployed to GitHub Pages</li>
+        </ul>
+
+        <h1 id="case-header">User Stories</h1>
+        <ul id="case-study-list">
+          <li>
+            - As a user, I want to be able to receive information on movies, directors, and genres
+            so that I can learn more about movies I've watched or am interested in.
+          </li>
+          <li>
+            - As a user, I want to be able to create a profile so I can save data about my favorite
+            movies.
+          </li>
+        </ul>
+        <p>
+          With these user stories, I was able to implement the proper API endpoints required to
+          fetch or request data from the database. For a full documentation of the endpoints, please
+          refer to this
+          <a
+            class="case-link"
+            href="https://myflix-movie-application.herokuapp.com/documentation.html"
+            target="_blank"
+            >resource</a
+          >.
+        </p>
+        <h2 id="case-study-subheader">Image of the API endpoints</h2>
+        <img
+          class="responsive"
+          src="./img/API endpoints.png"
+          alt="Image of the API documentation"
+        />
+
+        <div class="case-break"></div>
+        <h1 id="case-header">Server-side Development</h1>
+        <p>
+          I built a REST API that interacts with a NoSQL, document-based database, called MongoDB.
+          The API also uses Node, Express, Mongoose for the business logic, and authentication and
+          authorization logic that allows users to safely log in after registering an account.
+        </p>
+        <h2 id="case-study-subheader">Image of the movies collection in MongoDB</h2>
+        <img class="responsive" src="./img/MongoDB.png" alt="Image of the MongoDB database" />
+
+        <div class="case-break"></div>
+        <p>
+          To make sure all HTTP requests were processed accordingly, the API was tested using
+          Postman.
+        </p>
+        <h2 id="case-study-subheader">Image of a sample request posted successfully in Postman</h2>
+        <img class="responsive" src="./img/Postman.png" alt="Image of Postman testing" />
+
+        <div class="case-break"></div>
+        <h1 id="case-header">Client-side Development</h1>
+        <p>
+          Using Angular, I built the interfaces that users would be interacting with, which include
+          the welcome, registration, login, movies, and profile pages. The rest of the UI components
+          were designed using Angular Material. Overall, the separation of components and templates
+          made it convenient to fetch/request the necessary data, while also keeping the UI simple
+          and clean.
+        </p>
+
+        <p>
+          Users begin their journey through the app by registering an account via the 'Sign Up'
+          button, and then logging their credentials via the 'Login' button. The welcome page
+          displays two buttons that both render an interactive modal.
+        </p>
+
+        <h2 id="case-study-subheader">Image of the welcome page</h2>
+        <img
+          class="responsive"
+          src="./img/myFlix-angular-welcome.png"
+          alt="Image of myFlix-Angular welcome page"
+        />
+
+        <div class="case-break"></div>
+        <h2 id="case-study-subheader">Image of the registration modal</h2>
+        <img
+          class="responsive"
+          src="./img/myFlix-angular-register.png"
+          alt="Image of myFlix-Angular register modal"
+        />
+
+        <div class="case-break"></div>
+        <h2 id="case-study-subheader">Image of the login modal</h2>
+        <img
+          class="responsive"
+          src="./img/myFlix-angular-login.png"
+          alt="Image of myFlix-Angular login modal"
+        />
+
+        <div class="case-break"></div>
+        <p>
+          Once the users have logged in, they are presented with the movies homepage. It displays
+          all the movies from the database in the form of individual cards. Each card shows the
+          title, director, and several buttons to allow the user to check more information on the
+          genre, the director, the synopsis, or to add the selected movie to their list of
+          favorites.
+        </p>
+        <h2 id="case-study-subheader">Image of the movies homepage</h2>
+        <img
+          class="responsive"
+          src="./img/myFlix-Angular.png"
+          alt="Image of myFlix-Angular movies page"
+        />
+
+        <div class="case-break"></div>
+        <p>
+          Users can click on the 'Genre', 'Director', or 'Synopsis' buttons to get more information
+          about the selected topic.
+        </p>
+        <h2 id="case-study-subheader">
+          Image of the movie's genre modal when clicked (Showing the Lady Bird Movie)
+        </h2>
+        <img class="responsive" src="./img/Genre modal.png" alt="Image of the genre modal" />
+
+        <div class="case-break"></div>
+        <h2 id="case-study-subheader">
+          Image of the movie's director modal when clicked (Showing the Lady Bird Movie)
+        </h2>
+        <img class="responsive" src="./img/director modal.png" alt="Image of the director modal" />
+
+        <div class="case-break"></div>
+        <h2 id="case-study-subheader">
+          Image of the movie's synopsis modal when clicked (Showing the Lady Bird Movie)
+        </h2>
+        <img class="responsive" src="./img/summary modal.png" alt="Image of the synopsis modal" />
+
+        <div class="case-break"></div>
+        <p>
+          The user can then go to their profile page by clicking on the 'Profile' button, located at
+          the top right corner. They can change their user information or delete a movie that is
+          listed under 'Favorite Movies'.
+        </p>
+        <h2 id="case-study-subheader">Image of the user's profile page</h2>
+        <img
+          class="responsive"
+          src="./img/myFlix-angular-profile-pg.png"
+          alt="Image of myFlix-Angular user profile page"
+        />
+
+        <div class="case-break"></div>
+        <p>
+          Users also have the option of deleting their profile from the database entirely by
+          clicking on the 'Delete Profile' button at the top right corner, right after the 'Logout'
+          button. (No worries with accidentally clicking it - there is a confirmation modal asking
+          if the user wants to proceed. Users can just press the 'escape' key, click the 'cancel'
+          option, or click anywhere outside the modal to exit.)
+        </p>
+        <h2 id="case-study-subheader">
+          Image of the menu bar where users can opt to delete their profile account
+        </h2>
+        <img class="responsive" src="./img/Top menu.png" alt="Image of myFlix-Angular menu bar" />
+
+        <div class="case-break"></div>
+        <h1 id="case-header">Challenges</h1>
+        <p>
+          The main challenge I overcame throughout this whole project was the learning curve for the
+          Angular framework and its commonly used programming language - TypeScript. Since
+          TypeScript is a new language for me, I had to familiarize myself with the syntax and its
+          use of generics. I read articles on Angular and TypeScript to better understand how more
+          experienced developers approach these concepts, as well as watching YouTube videos to see
+          how functions and components were being implemented. Once I had a pretty decent
+          understanding, I really enjoyed developing this project.
+          <br />
+          <br />
+          In fact, it's a favorite project of mine and here's why. There was a situation where I was
+          struggling to fetch the movies for the updated username, and the process of debugging and
+          console logging the responses were very memorable to me - not because of the all-nighters
+          I pulled to solve the issue, but because that situation was when I realized the power of
+          console logging and it has changed my perspective since. It sounds a bit weird, but let me
+          articulate.
+          <br />
+          <br />
+          Throughout my whole CareerFoundry journey of developing projects, I never really used
+          console logs, simply because I would just try and figure out the solution through trial
+          and error (which worked for me most of the time). But with this project, I decided to
+          console log a whole lot of results and responses to see what data I was actually
+          receiving/requesting. These logs helped with identifying what type of errors I was getting
+          and where it was occurring. Because of this experience, I felt like I've grown immensely
+          in regard to my debugging process. Although I've learned other testing methods such as the
+          test-driven development technique, I feel a lot more comfortable using the simplicity and
+          power of console logging.
+        </p>
+
+        <h1 id="case-header">Reflections</h1>
+        <p>
+          Looking back at all the work I've done for this project, I feel genuinely proud of myself
+          for several reasons. One, I learned to program in a new language, which I can now continue
+          to hone. Two, I realized the best debugging method for me and will happily use in my
+          future projects. Lastly, it was the final project of the CareerFoundry program, and a
+          milestone reminding me of how far I've come. Not to mention, it was such an enjoyable
+          project to do; I thoroughly enjoyed testing out Angular Material's various UI components.
+          <br />
+          <br />
+          My original objective was to learn a popular client-side framework to add to my skillset.
+          Despite some challenges along the way, I have successfully completed the objective and
+          more. Moving forward, I now know how to approach the development process in a way that
+          allows me to catch errors quickly and more effectively, make decisions on what library or
+          framework to use for future projects (since I can now develop with two major ones), and
+          learn new languages/frameworks/libraries through dedicated reading and research.
+        </p>
+        <p>Thank you for letting me share this journery with you!</p>
+      </div>
+    </div>
+
+    <footer class="container">
+      <div class="footer-content container">
+        <a class="social-media-icon" id="tooltip" href="https://github.com/VeeMae" target="_blank"
+          ><span class="tooltiptext">Check out my codebase!</span
+          ><img src="img/github_icon.svg" alt="Github"
+        /></a>
+        <a class="social-media-icon" id="tooltip" href="mailto:hello@venusmae.dev"
+          ><span class="tooltiptext">Let's chat!</span><img src="img/mail_icon.svg" alt="Mail icon"
+        /></a>
+        <a
+          class="social-media-icon"
+          id="tooltip"
+          href="https://www.linkedin.com/in/venusmaemg/"
+          target="_blank"
+          ><span class="tooltiptext">Let's connect!</span
+          ><img src="img/linkedin_icon.svg" alt="LinkedIn"
+        /></a>
+        <a
+          class="social-media-icon"
+          id="tooltip"
+          href="https://www.worldwildlife.org/"
+          target="_blank"
+          ><span class="tooltiptext">Donate to a good cause!</span
+          ><img src="img/donate_icon.svg" alt="World Wildlife Fund"
+        /></a>
+        <br />
+        <div class="footer-credit">
+          <img
+            src="img/white_logo_transparent_background.png"
+            alt="Logo Photo spelling out the name Venus Mae"
+            class="footer-logo"
+          />
+          <p class="footer-year">&copy; 2020</p>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
+      integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/tota11y.min.js"></script>
+  </body>
+</html>

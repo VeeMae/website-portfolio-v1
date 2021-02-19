@@ -36,6 +36,7 @@ body {
   height: 100vh;
   display: flex;
   flex-direction: column;
+  animation: 2s fadeInOpacity linear;
 }
 
 h1 {
@@ -77,7 +78,7 @@ a:hover {
 header {
   margin: 0 auto;
   margin-top: 1rem;
-  animation: 3s fadeInOpacity linear;
+  animation: 2s fadeInOpacity linear;
 }
 
 #navbarContent {
@@ -120,7 +121,7 @@ footer {
   text-align: center;
   clear: both;
   margin: 0 auto;
-  animation: 3s fadeInOpacity linear;
+  animation: 2s fadeInOpacity linear;
 }
 
 .social-media-icon {
@@ -144,15 +145,19 @@ footer {
   margin-bottom: 0;
 }
 
-#hover-words {
-  display: none;
-  font-size: 0.8rem;
+#tooltip .tooltiptext {
+  visibility: hidden;
+  width: auto;
+  background-color: transparent;
+  color: var(--font-color);
+  text-align: left;
+  position: fixed;
+  bottom: 95px;
+  z-index: 1;
 }
 
-.social-media-icon:hover #hover-words {
-  display: inline-block;
-  position: absolute;
-  bottom: 95px;
+#tooltip:hover .tooltiptext {
+  visibility: visible;
 }
 
 /* Homepage Styles */
@@ -162,7 +167,7 @@ footer {
   margin-right: 30px;
   border-radius: 40px 0;
   border: 1px solid var(--span-color);
-  animation: 3s fadeInOpacity linear;
+  animation: 2s fadeInOpacity linear;
   /* box-shadow: 1px 2px 20px var(--box-shadow); */
 }
 
@@ -179,7 +184,7 @@ footer {
 
 .profile h1 {
   padding-top: 50px;
-  animation: 3s fadeInOpacity linear;
+  animation: 2s fadeInOpacity linear;
 }
 
 .animation {
@@ -201,7 +206,8 @@ footer {
   text-align: center;
   margin-top: 40px;
   margin-bottom: 80px;
-  animation: 4s fadeInOpacity ease-in-out;
+  /*Fade in slower than the rest*/
+  animation: 3s fadeInOpacity ease-in-out;
   text-transform: lowercase;
   letter-spacing: 9px;
 }
@@ -211,7 +217,7 @@ footer {
   width: 40%;
   margin: 0 auto;
   margin-top: 50px;
-  animation: 3s fadeInOpacity linear;
+  animation: 2s fadeInOpacity linear;
 }
 
 #accordionParent div.card {
@@ -269,7 +275,7 @@ h2.mb-0 .btn:focus {
 .resume-link {
   display: block;
   margin: 100px auto;
-  animation: 3s fadeInOpacity linear;
+  animation: 2s fadeInOpacity linear;
   text-align: center;
   color: var(--resume-link-color);
   font-weight: 500;
@@ -290,7 +296,7 @@ h2.mb-0 .btn:focus {
   margin: 0 auto;
   margin-bottom: 50px;
   padding: 5px;
-  animation: 3s fadeInOpacity linear;
+  animation: 2s fadeInOpacity linear;
 }
 
 div.card-body.caseStudy {
@@ -326,6 +332,7 @@ p.card-text.featuredText {
   margin: 10px auto;
   max-width: 100%;
   height: auto;
+  animation: 2s fadeInOpacity linear;
 }
 
 img#chat-app-img.responsive {
@@ -382,7 +389,7 @@ ul.work-list {
     margin: 0 auto;
     margin-bottom: 250px;
     width: 100%;
-    animation: 3s fadeInOpacity linear;
+    animation: 2s fadeInOpacity linear;
   }
 
   .work-grid__item {
@@ -396,7 +403,58 @@ ul.work-list {
 /* Contact Page */
 .typeform-widget {
   margin: 70px auto;
-  animation: 3s fadeInOpacity linear;
+  animation: 2s fadeInOpacity linear;
+}
+
+/* Case Study Page */
+#case-header {
+  margin-bottom: 20px;
+  background-color: rgb(172, 95, 93, 0.4);
+  padding: 15px;
+  font-weight: 700;
+  animation: 2s fadeInOpacity linear;
+}
+
+#case-study {
+  animation: 2s fadeInOpacity linear;
+  margin-bottom: 150px;
+}
+
+#case-study p {
+  line-height: 1.5rem;
+  margin-bottom: 30px;
+  animation: 2s fadeInOpacity linear;
+}
+
+#case-study-list {
+  list-style: none;
+  line-height: 1.5rem;
+  padding-inline-start: 0;
+  animation: 2s fadeInOpacity linear;
+}
+
+#case-study-list li {
+  margin-bottom: 15px;
+}
+
+#case-study-subheader {
+  /* background-color: rgb(241, 229, 228, 0.3); */
+  font-family: var(--primary-font);
+  text-decoration: underline;
+  animation: 2s fadeInOpacity linear;
+}
+
+.case-link {
+  color: var(--resume-link-color);
+}
+
+.case-break {
+  margin: 50px 0;
+}
+
+.read-time {
+  display: block;
+  text-align: center;
 }
 
 /* Animations */
@@ -456,8 +514,8 @@ ul.work-list {
     text-align: center;
   }
 
-  .social-media-icon:hover #hover-words {
-    display: none;
+  #tooltip:hover .tooltiptext {
+    visibility: hidden;
   }
 
   .about-header,
@@ -574,16 +632,34 @@ ul.work-list {
     margin-bottom: 90px;
     padding: 0;
   }
+
+  /* case-study */
+
+  #case-header {
+    font-size: 1.1rem;
+    text-align: center;
+  }
+
+  #case-study p,
+  #case-study-list li {
+    font-size: 0.9rem;
+    text-align: center;
+  }
+
+  #case-study-subheader {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .case-break {
+    margin: 30px 0;
+  }
 }
 
 /* 768px - 1024px */
 @media all and (min-width: 768px) and (max-width: 1024px) {
   a.navbar-brand img {
     width: 165px;
-  }
-
-  .social-media-icon:hover #hover-words {
-    display: none;
   }
 
   /* homepage styles */
@@ -612,7 +688,7 @@ ul.work-list {
 
   .mobile-text {
     display: inline-block;
-    animation: 3s fadeInOpacity linear;
+    animation: 2s fadeInOpacity linear;
   }
 
   /* about page styles */
