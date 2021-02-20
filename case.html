@@ -160,9 +160,79 @@
         <h1 id="case-header">Server-side Development</h1>
         <p>
           I built a REST API that interacts with a NoSQL, document-based database, called MongoDB.
-          The API also uses Node, Express, Mongoose for the business logic, and authentication and
-          authorization logic that allows users to safely log in after registering an account.
+          The API also uses Node.js which allows me to use modules for added functionality and
+          JavaScript on the server-side, Express.js which handles all HTTP requests to the API,
+          Mongoose for the business logic, and authentication and authorization logic that allows
+          users to safely log in after registering an account.
         </p>
+
+        <p>
+          With Express, I was able to create requests to the different API endpoints and the
+          responses that should be returned for each route. I created an instance of express() with
+          these lines of code:
+          <br />- const express = require('express');
+          <br />
+          - const app = express();
+          <br />
+          <br />
+          I then included the HTTP request method for each endpoint. The following image displays
+          some of the endpoints I've defined for when a user first enters the app, searches for a
+          movie by name or genre, etc.
+        </p>
+        <img
+          class="responsive"
+          src="./img/express.png"
+          alt="Image of the index.js file which contains the instance of express()"
+        />
+
+        <div class="case-break"></div>
+        <p>
+          Since I used MongoDB for the database, I needed a mapper that could work with documents,
+          and that's where Mongoose came in (it's an Object Document Mapper, which works with
+          MongoDB's document architecture). In addition, I was able to define the schema for the
+          data returned from the API using models in Mongoose. This ensured that all data followed a
+          specified format and were consistent for user viewing. The following image shows the
+          schema I've defined for how the data would look like.
+        </p>
+        <img
+          class="responsive"
+          src="./img/mongoose.png"
+          alt="Image of the models.js file which contains the schema for the data returned from the API"
+        />
+
+        <div class="case-break"></div>
+        <p>
+          As for authentication and authorization, I used both HTTP and JWT-based authentication.
+          What this means is that for users who are logging in, they will have to provide both their
+          username and password, which will be checked with HTTP authentication. If the app finds
+          the user's credentials in the database, then the user gets authenticated and a JWT will be
+          generated for the user. Whenever the user makes more requests to the API, the JWT-based
+          authentication comes in to authorize those requests (it authenticates the user's JWT). In
+          short, in order to use the application, users need to register, log in and get
+          authenticated, which gives the user a JWT that then authorizes any other requests. Each
+          JWT is good for a day, so users will need to log in again after 24 hours of session.
+          <br />
+          <br />
+          I used Passport, which is an authentication middleware for Express and Node. This
+          middleware is what implements the HTTP authentication when users log in, and JWT
+          authentication for all other requests thereafter. Passport uses strategies, which permits
+          authentication and authorization means (they're just chunks of code). The following image
+          shows the HTTP and JWT-based strategies for the security measures previously mentioned.
+          The image after that shows the logic behind actually authenticating the user once they log
+          in.
+        </p>
+        <img
+          class="responsive"
+          src="./img/passport.png"
+          alt="Image of the passport.js file which contains the HTTP and JWT authentication functions"
+        />
+        <img
+          class="responsive"
+          src="./img/auth.png"
+          alt="Image of the auth.js file which contains the authentication logic when users log in"
+        />
+
+        <div class="case-break"></div>
         <h2 id="case-study-subheader">Image of the movies collection in MongoDB</h2>
         <img class="responsive" src="./img/MongoDB.png" alt="Image of the MongoDB database" />
 
@@ -173,6 +243,34 @@
         </p>
         <h2 id="case-study-subheader">Image of a sample request posted successfully in Postman</h2>
         <img class="responsive" src="./img/Postman.png" alt="Image of Postman testing" />
+
+        <div class="case-break"></div>
+        <h1 id="case-header">Challenges During the Server-side Development</h1>
+        <p>
+          The biggest challenge I came across while developing the back end was trying to wrap my
+          head around the concept of Node.js. I knew it was a runtime environment for running
+          JavaScript without a browser, but I wasn't understanding what that really meant at the
+          time. I was so used to writing JavaScript for the browser or using the browser's console
+          to execute simple commands, so I was confused as to how exactly I would write it for the
+          server-side. When I actually began to use the Node Console on my terminal, it started to
+          make more sense. Node also allowed me to install modules and packages into my application
+          which would further help in creating the back end logic (Express, Passport, and Morgan
+          were some packages/modules to name a few). Eventually, it became apparent to me how great
+          Node really was - it allowed me to use JavaScript on the server-side so that I wouldn't
+          have to learn a whole new language (learning TypeScript was a challenge in itself, as
+          you'll see later on).
+          <br />
+          <br />
+          With that said, learning how to code the server-side was a challenge in itself. The myFlix
+          application was the first time I ever set foot into server-side programming, so the whole
+          experience was a little bit daunting to begin with. But with practice, research, and
+          learning from my mistakes, I began to really enjoy it. I'm really interested in the
+          concepts of implementing security, choosing the right database, the right mapper for the
+          business logic, and creating the API endpoints. They feel like a whole new world compared
+          to the client-side, which makes me even more curious to explore it further. It's
+          definitely enjoyable as well, so that reinforces my goal in becoming a full stack
+          developer!
+        </p>
 
         <div class="case-break"></div>
         <h1 id="case-header">Client-side Development</h1>
@@ -380,6 +478,6 @@
       integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
       crossorigin="anonymous"
     ></script>
-    <script src="js/tota11y.min.js"></script>
+    <!-- <script src="js/tota11y.min.js"></script> -->
   </body>
 </html>
