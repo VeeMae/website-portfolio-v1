@@ -247,29 +247,41 @@
         <div class="case-break"></div>
         <h1 id="case-header">Challenges During the Server-side Development</h1>
         <p>
-          The biggest challenge I came across while developing the back end was trying to wrap my
-          head around the concept of Node.js. I knew it was a runtime environment for running
-          JavaScript without a browser, but I wasn't understanding what that really meant at the
-          time. I was so used to writing JavaScript for the browser or using the browser's console
-          to execute simple commands, so I was confused as to how exactly I would write it for the
-          server-side. When I actually began to use the Node Console on my terminal, it started to
-          make more sense. Node also allowed me to install modules and packages into my application
-          which would further help in creating the back end logic (Express, Passport, and Morgan
-          were some packages/modules to name a few). Eventually, it became apparent to me how great
-          Node really was - it allowed me to use JavaScript on the server-side so that I wouldn't
-          have to learn a whole new language (learning TypeScript was a challenge in itself, as
-          you'll see later on).
+          There were a couple challenges I came across while developing the back end. First, it was
+          somewhat confusing trying to wrap my head around the concept of Node. I knew it was a
+          runtime environment for running JavaScript without a browser, but I wasn't understanding
+          what that really meant at the time. I was so used to writing JavaScript for the browser or
+          using the browser's console to execute simple commands, so I was confused as to how
+          exactly I would write it for the server-side. When I actually began to write JS code
+          within the index.js file (which is the default entry point into a Node.js app) to
+          implement certain components, it started to make sense. I realized that Node was parsing
+          the JavaScript code so that it could be understood by the server. Node also made it
+          possible to install modules and packages into my application which further helped in
+          creating the back end logic (Express, Passport, and Morgan were some packages/modules I
+          used, to name a few). Eventually, it became apparent to me how great Node really was - it
+          allowed me to use JavaScript on the server-side, which made the transition from
+          client-side programming easier.
           <br />
           <br />
-          With that said, learning how to code the server-side was a challenge in itself. The myFlix
-          application was the first time I ever set foot into server-side programming, so the whole
-          experience was a little bit daunting to begin with. But with practice, research, and
-          learning from my mistakes, I began to really enjoy it. I'm really interested in the
-          concepts of implementing security, choosing the right database, the right mapper for the
-          business logic, and creating the API endpoints. They feel like a whole new world compared
-          to the client-side, which makes me even more curious to explore it further. It's
-          definitely enjoyable as well, so that reinforces my goal in becoming a full stack
-          developer!
+          Another challenge was understanding how to implement the security measures explained
+          above. There were quite a few things required to fully authenticate users, and I had to
+          familiarize myself with Passport's use of strategies, which were chunks of code that
+          defined what the HTTP and JWT authentications did. I then needed to create the actual
+          logic that would use those strategies so that clicking the login button and going through
+          the authentication phase was executed properly. I've never written code to authenticate
+          and authorize users before, so I had to read about them and then explore Passport's use
+          cases to make sure I really understood how to implement it.
+          <br />
+          <br />
+          With that said, learning how to code the server-side, as a whole, was a challenge in
+          itself. The myFlix application was the first time I ever set foot into server-side
+          programming, so the whole experience was a little bit daunting to begin with. But with
+          practice, continuous research, and learning from my mistakes, I began to really enjoy it.
+          I'm really interested in the concepts of implementing security, choosing the right
+          database, the right mapper for the business logic, and creating the API endpoints. They
+          feel like a whole new world compared to the client-side, which makes me even more curious
+          to explore it further. It's definitely enjoyable as well, so that reinforces my goal in
+          becoming a full stack developer!
         </p>
 
         <div class="case-break"></div>
