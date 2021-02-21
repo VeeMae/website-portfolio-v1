@@ -475,6 +475,10 @@ button.toTop-btn {
   background-color: rgb(172, 95, 93, 0.4);
 }
 
+button.top-btn-mobile {
+  visibility: hidden;
+}
+
 /* Animations */
 @keyframes fadeInOpacity {
   0% {
@@ -676,6 +680,25 @@ button.toTop-btn {
 
   .case-break {
     margin: 30px 0;
+  }
+
+  button.toTop-btn {
+    visibility: hidden;
+    display: block;
+  }
+
+  button.top-btn-mobile {
+    visibility: visible;
+    background-color: var(--font-color);
+    border-color: transparent;
+    padding: 7px 4px 0 4px;
+    border-radius: 5%;
+    margin: 0 auto;
+    display: block;
+  }
+
+  a.toTop-link {
+    color: var(--primary-color);
   }
 }
 
