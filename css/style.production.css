@@ -141,7 +141,7 @@ footer {
 }
 
 .social-media-icon {
-  padding: 15px;
+  padding: 35px;
   margin-bottom: 20px;
 }
 
@@ -149,15 +149,21 @@ footer {
   width: 95px;
 }
 
-.footer-year {
+.footer-year,
+.footer-email {
   color: var(--footer-color);
   font-family: var(--secondary-font);
   font-size: 0.8rem;
   display: inline-block;
 }
+.footer-words {
+  font-size: 0.8rem;
+  color: var(--footer-color);
+  font-family: var(--secondary-font);
+}
 
 .footer-credit {
-  margin: 10px auto;
+  margin: 25px auto;
   margin-bottom: 0;
 }
 
@@ -168,8 +174,8 @@ footer {
   color: var(--font-color);
   text-align: left;
   position: fixed;
-  bottom: 95px;
-  z-index: 1;
+  bottom: 125px;
+  z-index: 5;
 }
 
 #tooltip:hover .tooltiptext {
@@ -179,9 +185,9 @@ footer {
 /* Homepage Styles */
 .profile-portrait {
   float: left;
-  width: 205px;
+  width: 220px;
   margin-right: 30px;
-  border-radius: 50%;
+  border-radius: 50px 0px;
   border: 1px solid var(--span-color);
   -webkit-animation: 1s fadeInOpacity linear;
   animation: 1s fadeInOpacity linear;
@@ -191,7 +197,7 @@ footer {
 .profile {
   max-width: 700px;
   margin: 0 auto;
-  margin-top: 200px;
+  margin-top: 150px;
 }
 
 .profile h1,
@@ -200,7 +206,7 @@ footer {
 }
 
 .profile h1 {
-  padding-top: 50px;
+  padding-top: 90px;
   -webkit-animation: 1s fadeInOpacity linear;
   animation: 1s fadeInOpacity linear;
 }
@@ -320,8 +326,7 @@ h2.mb-0 .btn:focus {
   -webkit-transition: 0.2s linear;
   -o-transition: 0.2s linear;
   transition: 0.2s linear;
-  -webkit-animation: shakeFx 1s linear infinite;
-  animation: shakeFx 1s linear infinite;
+  /* animation: shakeFx 1s linear infinite; */
 }
 
 /* Work Page */
@@ -512,6 +517,17 @@ ul.work-list {
   text-align: center;
 }
 
+a.toTop-link {
+  color: var(--primary-color);
+  font: var(--primary-font);
+}
+
+button.toTop-btn {
+  border-color: transparent;
+  padding: 7px 4px 0 4px;
+  border-radius: 5%;
+}
+
 /* Animations */
 @-webkit-keyframes fadeInOpacity {
   0% {
@@ -629,6 +645,11 @@ ul.work-list {
     margin-bottom: 0;
   }
 
+  .social-media-icon {
+    padding: 25px;
+    margin-bottom: 20px;
+  }
+
   /* homepage styles */
   a.navbar-brand img {
     width: 160px;
@@ -637,14 +658,14 @@ ul.work-list {
     float: none;
     margin: 10px auto;
     margin-top: 20px;
-    width: 165px;
+    width: 160px;
   }
 
   .profile {
     text-align: center;
     width: 95%;
     margin-top: 80px;
-    height: 65vh;
+    height: 77vh;
   }
 
   .profile h1,
