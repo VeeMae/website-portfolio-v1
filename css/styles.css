@@ -467,7 +467,7 @@ a.toTop-link {
   animation: 1s fadeInOpacity linear;
   color: var(--font-color);
   font: var(--primary-font);
-  text-decoration: underline;
+  cursor: pointer;
 }
 
 .toTop-div {
