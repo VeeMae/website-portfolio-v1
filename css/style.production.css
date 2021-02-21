@@ -518,7 +518,7 @@ ul.work-list {
 }
 
 a.toTop-link {
-  color: var(--primary-color);
+  color: var(--font-color);
   font: var(--primary-font);
 }
 
@@ -526,6 +526,7 @@ button.toTop-btn {
   border-color: transparent;
   padding: 7px 4px 0 4px;
   border-radius: 5%;
+  background-color: rgb(172, 95, 93, 0.4);
 }
 
 /* Animations */
