@@ -475,7 +475,7 @@ button.toTop-btn {
   background-color: rgb(172, 95, 93, 0.4);
 }
 
-button.top-btn-mobile {
+.top-btn-mobile {
   visibility: hidden;
 }
 
@@ -687,18 +687,20 @@ button.top-btn-mobile {
     display: block;
   }
 
-  button.top-btn-mobile {
+  .top-btn-mobile {
     visibility: visible;
     background-color: var(--font-color);
     border-color: transparent;
-    padding: 7px 4px 0 4px;
+    padding: 8px 4px 0 4px;
     border-radius: 5%;
-    margin: 0 auto;
     display: block;
+    margin: 0 auto;
+    width: 50%;
   }
 
   a.toTop-link {
     color: var(--primary-color);
+    text-align: center;
   }
 }
 
