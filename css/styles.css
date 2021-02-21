@@ -464,20 +464,15 @@ ul.work-list {
 }
 
 a.toTop-link {
+  animation: 1s fadeInOpacity linear;
   color: var(--font-color);
   font: var(--primary-font);
+  text-decoration: underline;
 }
 
-button.toTop-btn {
-  visibility: visible;
-  border-color: transparent;
-  padding: 7px 4px 0 4px;
-  border-radius: 5%;
-  background-color: rgb(172, 95, 93, 0.4);
-}
-
-.top-btn-mobile {
-  visibility: hidden;
+.toTop-div {
+  margin-top: 70px;
+  text-align: center;
 }
 
 /* Animations */
@@ -681,22 +676,6 @@ button.toTop-btn {
 
   .case-break {
     margin: 30px 0;
-  }
-
-  button.toTop-btn {
-    visibility: hidden;
-    display: none;
-  }
-
-  .top-btn-mobile {
-    visibility: visible;
-    display: block;
-    margin-top: 100px;
-  }
-
-  a.toTop-link {
-    color: var(--font-color);
-    text-align: center;
   }
 }
 
