@@ -125,8 +125,12 @@ footer {
 }
 
 .social-media-icon {
-  padding: 35px;
-  margin-bottom: 20px;
+  padding: 10px;
+  margin: 0 40px 0 0;
+}
+
+.last-icon {
+  margin-right: 0;
 }
 
 .footer-content img.footer-logo {
@@ -137,17 +141,18 @@ footer {
 .footer-email {
   color: var(--footer-color);
   font-family: var(--secondary-font);
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   display: inline-block;
 }
+
 .footer-words {
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   color: var(--footer-color);
   font-family: var(--secondary-font);
 }
 
 .footer-credit {
-  margin: 25px auto;
+  margin: 30px auto;
   margin-bottom: 0;
 }
 
@@ -158,7 +163,7 @@ footer {
   color: var(--font-color);
   text-align: left;
   position: fixed;
-  bottom: 125px;
+  bottom: 130px;
   z-index: 5;
 }
 
@@ -547,8 +552,11 @@ a.toTop-link {
   }
 
   .social-media-icon {
-    padding: 25px;
-    margin-bottom: 20px;
+    margin: 0 25px 0 0;
+  }
+
+  .last-icon {
+    margin-right: 0;
   }
 
   /* homepage styles */
