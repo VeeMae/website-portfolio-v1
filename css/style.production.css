@@ -75,7 +75,7 @@ span {
 
 /* Link Styles */
 a {
-  font-size: 1rem;
+  font-size: 0.9rem;
   cursor: pointer;
 }
 
@@ -175,13 +175,13 @@ footer {
   background-color: transparent;
   color: var(--font-color);
   position: fixed;
-  bottom: 130px;
+  bottom: 120px;
   z-index: 5;
 }
 
 #tooltip .tooltiptext-email {
   position: fixed;
-  bottom: 70px;
+  bottom: 67px;
 }
 
 #tooltip:hover .tooltiptext {
@@ -643,6 +643,15 @@ a.toTop-link {
   #tooltip:hover .tooltiptext,
   #tooltip .tooltiptext-email {
     visibility: hidden;
+  }
+
+  .footer-credit,
+  a.footer-email {
+    font-size: 0.8rem;
+  }
+
+  .footer-words {
+    padding-top: 5px;
   }
 
   .about-header,
