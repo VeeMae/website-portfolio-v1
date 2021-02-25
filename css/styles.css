@@ -125,35 +125,32 @@ footer {
 }
 
 .social-media-icon {
-  padding: 10px;
-  margin: 0 40px 0 0;
+  padding: 0;
+  margin-right: 30px;
 }
 
 .last-icon {
   margin-right: 0;
 }
 
-.footer-content img.footer-logo {
+/* .footer-content img.footer-logo {
   width: 95px;
-}
+} */
 
-.footer-year,
-.footer-email {
-  color: var(--footer-color);
+.footer-credit {
+  margin: 10px auto;
+  margin-bottom: 0;
   font-family: var(--secondary-font);
   font-size: 0.9rem;
-  display: inline-block;
+  color: var(--footer-color);
 }
 
 .footer-words {
-  font-size: 0.9rem;
-  color: var(--footer-color);
-  font-family: var(--secondary-font);
+  padding-top: 13px;
 }
 
-.footer-credit {
-  margin: 30px auto;
-  margin-bottom: 0;
+.footer-email {
+  color: var(--footer-color);
 }
 
 #tooltip .tooltiptext {
@@ -161,10 +158,14 @@ footer {
   width: auto;
   background-color: transparent;
   color: var(--font-color);
-  text-align: left;
   position: fixed;
   bottom: 130px;
   z-index: 5;
+}
+
+#tooltip .tooltiptext-email {
+  position: fixed;
+  bottom: 70px;
 }
 
 #tooltip:hover .tooltiptext {
@@ -247,7 +248,7 @@ footer {
 }
 
 #about-list {
-  column-count: 3;
+  column-count: 2;
   column-gap: 10px;
   column-rule: 0.2px solid var(--span-color);
   text-align: center;
@@ -473,6 +474,7 @@ a.toTop-link {
   color: var(--font-color);
   font: var(--primary-font);
   cursor: pointer;
+  text-transform: uppercase;
 }
 
 .toTop-div {
@@ -537,7 +539,8 @@ a.toTop-link {
     text-align: center;
   }
 
-  #tooltip:hover .tooltiptext {
+  #tooltip:hover .tooltiptext,
+  #tooltip .tooltiptext-email {
     visibility: hidden;
   }
 
@@ -684,6 +687,10 @@ a.toTop-link {
 
   .case-break {
     margin: 30px 0;
+  }
+
+  a.toTop-link {
+    font-size: 0.9rem;
   }
 }
 
