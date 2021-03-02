@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Projects</title>
-     <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png" />
     <!-- <link rel="manifest" href="/site.webmanifest" /> -->
     <link
       rel="stylesheet"
@@ -12,7 +12,7 @@
       integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" type="text/css" href="css/style.production.css" />
+    <link rel="stylesheet" type="text/css" href="css/styles.min.css" />
   </head>
 
   <body>
@@ -61,29 +61,30 @@
             <div class="card-header featuredHeader">Featuring</div>
             <div class="card-body caseStudy">
               <h2 class="card-title featuredTitle">The Meet Application</h2>
-              <p class="card-text">
-                <img
-                  class="responsive"
-                  src="./img/MeetApp.png"
-                  alt="Photo of the Meet Application homepage."
-                />
-                <img
-                  class="responsive"
-                  src="./img/MeetApp2.png"
-                  alt="Photo of the Meet Application events."
-                />
-              </p>
+
               <p class="card-text featuredText">
-                The Meet App is a serverless, progressive web application. It was built using React,
-                a Google Calendar API to fetch upcoming events, serverless functions through AWS
-                lambda, OAuth2 authentication flow, and a test-driven development technique. Through
-                the app, users are able to filter events by city, show/hide event details, specify a
-                number of events to be displayed, view cached events when offline, add a shortcut to
-                their device homescreen, and view a chart showing the number of events by city and
-                popularity. In addition, the process included creating user stories to define the
-                application logic and using Atatus as an application performance monitoring tool
-                post-production.
+                The Meet App is a serverless, progressive web application that lets users filter
+                events by city, show/hide event details, specify number of displayed events, view
+                cached events when offline, add a shortcut to their device homescreen, and view
+                charts showing the number of events by city and popularity.
               </p>
+              <img
+                class="responsive"
+                src="./img/MeetApp.png"
+                alt="Photo of the Meet Application homepage."
+              />
+
+              <h2 id="work-list-header">Technical Specs:</h2>
+              <ul class="work-list featured-list">
+                <li>⚙️ Uses React library</li>
+                <li>⚙️ Deployed to GitHub Pages</li>
+                <li>⚙️ Utilizes OAuth2 authentication</li>
+                <li>⚙️ Fetches data from Google Calendar API</li>
+                <li>⚙️ Programmed in Visual Studio Code</li>
+                <li>⚙️ Performance monitored with Atatus</li>
+                <li>⚙️ Uses AWS lambda serverless functions</li>
+                <li>⚙️ Uses test-driven development technique</li>
+              </ul>
             </div>
             <div class="card-footer btn">
               <a href="https://veemae.github.io/meet-app/" target="_blank">👉🏼 &nbsp;Demo</a><br />
@@ -98,16 +99,18 @@
           <div class="work-grid__item">
             <h2>Rogue Pickings Website</h2>
             <p>
-              This is a project I built from scratch using a PSD file (during my time at Skillcrush). I
-              originally started with a static version, but with this iteration, I added responsiveness for better user
-              experience. This website is meant to represent a local food truck that provides customers with fresh vegetables.
-              <img
-                  class="responsive"
-                  src="./img/Rogue Pickings Site.png"
-                  alt="Photo of the Rogue Pickings Website"
-                />
-            <br/>
-            <h2 id="work-list-header">Technical Specs:</h2>
+              This is a project I built from scratch using a PSD file (during my time at
+              Skillcrush). I originally started with a static version, but with this iteration, I
+              added responsiveness for better user experience. This website is meant to represent a
+              local food truck that provides customers with fresh vegetables.
+            </p>
+            <img
+              class="responsive"
+              src="./img/Rogue Pickings Site.png"
+              alt="Photo of the Rogue Pickings Website"
+            />
+            <br />
+            <h2>Technical Specs:</h2>
             <ul class="work-list">
               <li>⚙️ Uses HTML</li>
               <li>⚙️ Uses CSS styling</li>
@@ -115,7 +118,7 @@
               <li>⚙️ Deployed to GitHub Pages</li>
               <li>⚙️ Programmed in Visual Studio Code</li>
             </ul>
-            </p>
+
             <a href="https://veemae.github.io/rogue-pickings-responsive/" target="_blank"
               >👉🏼 &nbsp;Demo</a
             ><br />
@@ -126,15 +129,17 @@
           <div class="work-grid__item">
             <h2>Harry Potter JavaScript Application</h2>
             <p>
-              This application allows users to read about Harry Potter characters by fetching data from an external API.
-              When a user clicks on an item, a modal will appear with more info on the selected character.
-              <img
-                  class="responsive"
-                  src="./img/Harry Potter App.png"
-                  alt="Photo of the Harry Potter Application"
-                />
-              <br/>
-            <h2 id="work-list-header">Technical Specs:</h2>
+              This application allows users to read about Harry Potter characters by fetching data
+              from an external API. When a user clicks on an item, a modal will appear with more
+              info on the selected character.
+            </p>
+            <img
+              class="responsive"
+              src="./img/Harry Potter App.png"
+              alt="Photo of the Harry Potter Application"
+            />
+            <br />
+            <h2>Technical Specs:</h2>
             <ul class="work-list">
               <li>⚙️ Uses HTML</li>
               <li>⚙️ Uses CSS styling</li>
@@ -144,8 +149,9 @@
               <li>⚙️ Deployed to GitHub Pages</li>
               <li>⚙️ Programmed in Visual Studio Code</li>
             </ul>
-            </p>
-            <a href="https://github.com/VeeMae/harry-potter-js-app" target="_blank">👉🏼 &nbsp;Demo (Please see instructions on GitHub to view a demo)</a
+
+            <a href="https://github.com/VeeMae/harry-potter-js-app" target="_blank"
+              >👉🏼 &nbsp;Demo (Please see instructions on GitHub to view a demo)</a
             ><br />
             <a href="https://github.com/VeeMae/harry-potter-js-app" target="_blank"
               >👉🏼 &nbsp;GitHub Repository</a
@@ -154,14 +160,18 @@
           <div class="work-grid__item">
             <h2>MyFlix Application (React Version)</h2>
             <p>
-              I built this application using the MERN Stack. It was created in 2 phases - 1) server-side using REST API and MongoDB 2) client-side using React and Redux. The app allows users to register and log in, view movies from a database, update/delete their profile, and add/remove movies to/from their list of favorites.
-              <img
-                  class="responsive"
-                  src="./img/myFlix-React.png"
-                  alt="Photo of the myFlix Application (React Version) "
-                />
-               <br/>
-            <h2 id="work-list-header">Technical Specs:</h2>
+              I built this application using the MERN Stack. It was created in 2 phases - 1)
+              server-side using REST API and MongoDB 2) client-side using React and Redux. The app
+              allows users to register and log in, view movies from a database, update/delete their
+              profile, and add/remove movies to/from their list of favorites.
+            </p>
+            <img
+              class="responsive"
+              src="./img/myFlix-React.png"
+              alt="Photo of the myFlix Application (React Version) "
+            />
+            <br />
+            <h2>Technical Specs:</h2>
             <ul class="work-list">
               <li>⚙️ API uses Node and Express</li>
               <li>⚙️ API uses REST architecture</li>
@@ -170,32 +180,40 @@
               <li>⚙️ Business logic is modeled with Mongoose</li>
               <li>⚙️ Coded in JavaScript</li>
               <li>⚙️ Uses React library</li>
-              <li>⚙️ API is tested using <a href="https://www.postman.com/" target="_blank">Postman</a></li>
+              <li>
+                ⚙️ API is tested using
+                <a href="https://www.postman.com/" target="_blank">Postman</a>
+              </li>
               <li>⚙️ API includes user authentication and authorization</li>
               <li>⚙️ API is deployed to Heroku</li>
               <li>⚙️ Programmed in Visual Studio Code</li>
             </ul>
-            </p>
-            <a href="https://myflix-movie-application.herokuapp.com/" target="_blank">👉🏼 &nbsp;Demo</a><br />
+
+            <a href="https://myflix-movie-application.herokuapp.com/" target="_blank"
+              >👉🏼 &nbsp;Demo</a
+            ><br />
             <a href="https://github.com/VeeMae/myFlix" target="_blank"
               >👉🏼 &nbsp;GitHub Repository to the full stack codebase</a
             >
-            <br/>
+            <br />
             <a href="https://github.com/VeeMae/myFlix-client" target="_blank"
               >👉🏼 &nbsp;GitHub Repository to the client-side codebase</a
             >
           </div>
           <div class="work-grid__item">
             <h2>React Native Chat Application</h2>
-            <p>This project is a mobile application that provides users with a chat interface to send messages, images, and location.
-                <img
-                  class="responsive"
-                  id="chat-app-img"
-                  src="./img/Chat App.png"
-                  alt="Photo of the Chat Application"
-                />
-                <br/>
-            <h2 id="work-list-header">Technical Specs:</h2>
+            <p>
+              This project is a mobile application that provides users with a chat interface to send
+              messages, images, and location.
+            </p>
+            <img
+              class="responsive"
+              id="chat-app-img"
+              src="./img/Chat App.png"
+              alt="Photo of the Chat Application"
+            />
+            <br />
+            <h2>Technical Specs:</h2>
             <ul class="work-list">
               <li>⚙️ Uses React Native</li>
               <li>⚙️ Uses Expo CLI</li>
@@ -206,22 +224,29 @@
               <li>⚙️ Uses Android Studio for rendering</li>
               <li>⚙️ Programmed in Visual Studio Code</li>
             </ul>
-            </p>
-            <a href="https://coach-courses-us.s3.amazonaws.com/exercises/1126/37624/e54b3ef9591f86c2c70ddd6d356522cc/Chat-App.gif" target="_blank">👉🏼 &nbsp;Demo (The app is not deployed live, so this is a gif demo)</a><br />
+
+            <a
+              href="https://coach-courses-us.s3.amazonaws.com/exercises/1126/37624/e54b3ef9591f86c2c70ddd6d356522cc/Chat-App.gif"
+              target="_blank"
+              >👉🏼 &nbsp;Demo (The app is not deployed live, so this is a gif demo)</a
+            ><br />
             <a href="https://github.com/VeeMae/chat-application" target="_blank"
               >👉🏼 &nbsp;GitHub Repository</a
             >
           </div>
           <div class="work-grid__item">
             <h2>myFlix Application (Angular Version)</h2>
-            <p>This project uses the server-side of the original myFlix app described above, but is built with Angular on the client-side.
-                 <img
-                  class="responsive"
-                  src="./img/myFlix-Angular.png"
-                  alt="Photo of the myFlix Application (Angular Version)"
-                />
-                 <br/>
-            <h2 id="work-list-header">Technical Specs:</h2>
+            <p>
+              This project uses the server-side of the original myFlix app described above, but is
+              built with Angular on the client-side.
+            </p>
+            <img
+              class="responsive"
+              src="./img/myFlix-Angular.png"
+              alt="Photo of the myFlix Application (Angular Version)"
+            />
+            <br />
+            <h2>Technical Specs:</h2>
             <ul class="work-list">
               <li>⚙️ Uses the Angular framework</li>
               <li>⚙️ Designed with Angular Material</li>
@@ -230,25 +255,41 @@
               <li>⚙️ Deployed to GitHub Pages</li>
               <li>⚙️ Programmed in Visual Studio Code</li>
             </ul>
-            </p>
-            <a href="https://veemae.github.io/myFlix-angular-client/welcome" target="_blank">👉🏼 &nbsp;Demo</a><br />
+
+            <a href="https://veemae.github.io/myFlix-angular-client/welcome" target="_blank"
+              >👉🏼 &nbsp;Demo</a
+            ><br />
             <a href="https://github.com/VeeMae/myFlix-angular-client" target="_blank"
               >👉🏼 &nbsp;GitHub Repository</a
-            ><br/>
-            <a href="case.html"
-              >👉🏼 &nbsp;Case Study</a
-            >
+            ><br />
+            <a href="case.html">👉🏼 &nbsp;Case Study</a>
           </div>
           <div class="work-grid__item">
             <h2>More Projects Coming Soon</h2>
             <p>Currently working on some cool stuff, check back later! ✌🏼</p>
-            <div style="width:100%;height:0;padding-bottom:100%;position:relative;"><iframe src="https://giphy.com/embed/STroE7bTBLTzxQUrZc" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div><p><a href="https://giphy.com/gifs/BareTreeMedia-work-from-home-btm-bare-tree-media-STroE7bTBLTzxQUrZc">via GIPHY</a></p>
+            <div style="width: 100%; height: 0; padding-bottom: 100%; position: relative">
+              <iframe
+                src="https://giphy.com/embed/STroE7bTBLTzxQUrZc"
+                width="100%"
+                height="100%"
+                style="position: absolute"
+                frameborder="0"
+                class="giphy-embed"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <p>
+              <a
+                href="https://giphy.com/gifs/BareTreeMedia-work-from-home-btm-bare-tree-media-STroE7bTBLTzxQUrZc"
+                >via GIPHY</a
+              >
+            </p>
           </div>
         </div>
       </section>
     </div>
 
-     <footer class="container">
+    <footer class="container">
       <div class="footer-content container">
         <a class="social-media-icon" id="tooltip" href="https://github.com/VeeMae" target="_blank"
           ><span class="tooltiptext">Check out my codebase!</span
@@ -272,14 +313,12 @@
         /></a>
         <br />
         <div class="footer-credit">
-          <!-- <img
-            src="img/white_logo_transparent_background.png"
-            alt="Logo Photo spelling out the name Venus Mae"
-            class="footer-logo"
-          /> -->
           <p class="footer-words">
-            <a id="tooltip" class="footer-email" href="mailto:hello@venusmae.dev"><span class="tooltiptext tooltiptext-email">Contact me 👋🏼</span>📨 hello@venusmae.dev</a>
-            <div class="footer-space"></div>
+            <a id="tooltip" class="footer-email" href="mailto:hello@venusmae.dev"
+              ><span class="tooltiptext tooltiptext-email">Contact me 👋🏼</span>📨
+              hello@venusmae.dev</a
+            ><br />
+            <br />
             Built by Venus Mae &copy; 2021
           </p>
         </div>
